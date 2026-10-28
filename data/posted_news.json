@@ -9522,20 +9522,20 @@
     "fotmob_items_within_48h": 0,
     "fail_ratio": 0.0,
     "failures": [],
-    "at": "2026-10-28T07:47:13.078450+00:00",
+    "at": "2026-10-28T14:37:03.747472+00:00",
     "pipeline": {
-      "items_read": 703,
+      "items_read": 715,
       "items_by_feed": {
-        "google.premier_league.transfers": 5,
-        "google.premier_league.availability": 5,
+        "google.premier_league.transfers": 8,
+        "google.premier_league.availability": 6,
         "google.transfer.reporting.romano": 20,
         "google.transfer.reporting.ornstein": 20,
-        "google.injury.reporting.dinnery": 10,
+        "google.injury.reporting.dinnery": 20,
         "google.fotmob.premier_league.transfer_topics": 30,
         "google.fotmob.premier_league.availability_topics": 30,
         "fotmob.premier_league.topnews": 20,
         "bbc.premier_league": 20,
-        "bbc.football": 18,
+        "bbc.football": 16,
         "sky.sports": 20,
         "guardian.transfers": 20,
         "official.aston-villa": 15,
@@ -9561,68 +9561,69 @@
         "official.fpl.bootstrap": 10
       },
       "items_by_source": {
-        "official.premier_league": 10,
-        "unknown:news.google.com": 45,
-        "media.the_athletic": 3,
-        "media.bbc_sport": 40,
+        "official.premier_league": 14,
+        "unknown:news.google.com": 47,
+        "media.sky_sports": 21,
+        "media.bbc_sport": 42,
+        "media.the_athletic": 6,
         "media.fotmob": 180,
-        "media.sky_sports": 20,
         "media.the_guardian": 20,
-        "club.aston-villa": 16,
+        "club.aston-villa": 17,
         "club.bournemouth": 17,
-        "club.brentford": 21,
+        "club.brentford": 20,
         "club.brighton-and-hove-albion": 18,
         "club.burnley": 15,
         "club.crystal-palace": 24,
-        "club.everton": 16,
-        "club.fulham": 18,
-        "club.ipswich-town": 19,
-        "club.leicester-city": 17,
+        "club.everton": 17,
+        "club.fulham": 16,
+        "club.ipswich-town": 17,
+        "club.leicester-city": 16,
         "club.nottingham-forest": 15,
-        "club.sunderland": 16,
-        "club.wolverhampton-wanderers": 24,
+        "club.sunderland": 18,
+        "club.wolverhampton-wanderers": 17,
         "club.arsenal": 18,
-        "club.chelsea": 20,
-        "club.leeds-united": 21,
-        "club.liverpool": 9,
+        "club.chelsea": 19,
+        "club.leeds-united": 26,
+        "club.liverpool": 10,
         "club.manchester-city": 4,
         "club.manchester-united": 10,
-        "club.newcastle-united": 7,
-        "club.tottenham-hotspur": 5,
-        "club.west-ham-united": 11,
-        "club.southampton": 4,
+        "club.newcastle-united": 6,
+        "club.tottenham-hotspur": 8,
+        "club.west-ham-united": 14,
+        "club.southampton": 3,
         "specialist.ben_dinnery": 30,
         "official.fpl": 10
       },
       "outcomes": {
+        "stale_item": 414,
         "official_enrichment_unavailable": 9,
-        "stale_item": 420,
-        "already_posted_item": 2,
         "official_enriched": 1,
+        "already_posted_item": 1,
         "cross_verified_groups": 15
       },
-      "groups_verified": 250,
+      "groups_verified": 266,
       "decisions": {
-        "REJECT:UNKNOWN": 210,
-        "PENDING:INJURY": 6,
+        "REJECT:UNKNOWN": 221,
         "DUPLICATE:INJURY": 3,
-        "REJECT:TRANSFER": 18,
+        "PENDING:INJURY": 6,
+        "REJECT:TRANSFER": 20,
+        "PENDING:TRANSFER": 1,
+        "REJECT:SUSPENSION": 1,
         "PUBLISH:SUSPENSION": 1,
-        "REJECT:INJURY": 3,
+        "REJECT:INJURY": 4,
         "REJECT:PRESS_CONFERENCE": 3,
-        "PENDING:CONTRACT": 1,
-        "REJECT:CONTRACT": 1,
+        "REJECT:CONTRACT": 2,
         "PUBLISH:INJURY": 4
       },
       "failed_gates": {
-        "event_classification": 210,
-        "entity_validation": 234,
-        "league_validation": 77,
+        "event_classification": 221,
+        "entity_validation": 251,
+        "league_validation": 82,
         "database_consistency": 3,
         "story_progression": 3,
-        "sport_validation": 73,
-        "transfer_publication_safety": 18,
-        "article_category": 49
+        "sport_validation": 76,
+        "transfer_publication_safety": 21,
+        "article_category": 56
       },
       "ready_count": 5,
       "ready_authority_sources": {
@@ -20683,20 +20684,20 @@
     "152c8b25907cfbf3c0ef062a96d11079": {
       "decision": "REJECT",
       "event": "UNKNOWN",
-      "status": "RUMOUR",
+      "status": "UNKNOWN",
       "reasons": [
         "event_classification:conflicting or missing event classifications",
         "article_category:rumour/opinion/analysis/preview/recap/interview/feature/editorial or unknown",
         "entity_validation:mandatory person/club identity or relationship is unresolved",
         "source_provenance:no verified authoritative source yet",
         "source_url:authoritative source URL missing",
-        "event_status:status=RUMOUR; publishable=False",
+        "event_status:status=UNKNOWN; publishable=False",
         "official_confirmation:media/journalist evidence remains pending",
         "mandatory_facts:missing=[]; unsupported=[]",
         "temporal_consistency:awaiting authoritative timestamp",
         "source_reliability:minimum authoritative reliability=0.000"
       ],
-      "last_seen": "2026-10-28T07:48:32.010652+00:00"
+      "last_seen": "2026-10-28T14:38:24.981111+00:00"
     },
     "74fea608afb75a7fec914770b22c6425": {
       "decision": "REJECT",
@@ -20714,7 +20715,7 @@
         "temporal_consistency:awaiting authoritative timestamp",
         "source_reliability:minimum authoritative reliability=0.000"
       ],
-      "last_seen": "2026-10-28T07:48:43.885992+00:00"
+      "last_seen": "2026-10-28T14:38:33.508995+00:00"
     },
     "2d8d25c44b0eca11e41a523ba9ce9e25": {
       "decision": "REJECT",
@@ -20732,7 +20733,7 @@
         "temporal_consistency:awaiting authoritative timestamp",
         "source_reliability:minimum authoritative reliability=0.000"
       ],
-      "last_seen": "2026-10-28T07:48:41.310879+00:00"
+      "last_seen": "2026-10-28T14:38:27.722111+00:00"
     },
     "535fd5024a484cd97248f5b0e5bafaf4": {
       "decision": "REJECT",
@@ -20750,25 +20751,7 @@
         "temporal_consistency:awaiting authoritative timestamp",
         "source_reliability:minimum authoritative reliability=0.000"
       ],
-      "last_seen": "2026-10-28T07:48:42.762721+00:00"
-    },
-    "979abb4035dbc2c1cc1b77f2aa337f65": {
-      "decision": "REJECT",
-      "event": "UNKNOWN",
-      "status": "UNKNOWN",
-      "reasons": [
-        "event_classification:conflicting or missing event classifications",
-        "article_category:rumour/opinion/analysis/preview/recap/interview/feature/editorial or unknown",
-        "entity_validation:mandatory person/club identity or relationship is unresolved",
-        "source_provenance:no verified authoritative source yet",
-        "source_url:authoritative source URL missing",
-        "event_status:status=UNKNOWN; publishable=False",
-        "official_confirmation:media/journalist evidence remains pending",
-        "mandatory_facts:missing=[]; unsupported=[]",
-        "temporal_consistency:awaiting authoritative timestamp",
-        "source_reliability:minimum authoritative reliability=0.000"
-      ],
-      "last_seen": "2026-10-26T13:46:06.982229+00:00"
+      "last_seen": "2026-10-28T14:38:32.829647+00:00"
     },
     "462c338b598ec45d8bc7eb1e8ed967c3": {
       "decision": "REJECT",
@@ -20786,7 +20769,7 @@
         "temporal_consistency:awaiting authoritative timestamp",
         "source_reliability:minimum authoritative reliability=0.000"
       ],
-      "last_seen": "2026-10-28T07:48:34.940515+00:00"
+      "last_seen": "2026-10-28T14:38:19.093330+00:00"
     },
     "d63844412346a70ddc9169a56cb2cfdb": {
       "decision": "REJECT",
@@ -20804,7 +20787,7 @@
         "temporal_consistency:awaiting authoritative timestamp",
         "source_reliability:minimum authoritative reliability=0.000"
       ],
-      "last_seen": "2026-10-28T07:48:35.371886+00:00"
+      "last_seen": "2026-10-28T14:38:19.469088+00:00"
     },
     "3f8bbade106b9ffee97d1d7b97ea748c": {
       "decision": "REJECT",
@@ -20840,7 +20823,7 @@
         "temporal_consistency:awaiting authoritative timestamp",
         "source_reliability:minimum authoritative reliability=0.000"
       ],
-      "last_seen": "2026-10-28T07:48:41.517005+00:00"
+      "last_seen": "2026-10-28T14:38:30.051669+00:00"
     },
     "da34d7a2e3c5dc6f438601e9dcced419": {
       "decision": "REJECT",
@@ -20858,7 +20841,7 @@
         "temporal_consistency:awaiting authoritative timestamp",
         "source_reliability:minimum authoritative reliability=0.000"
       ],
-      "last_seen": "2026-10-28T07:48:34.933906+00:00"
+      "last_seen": "2026-10-28T14:38:27.541259+00:00"
     },
     "0a327fa7cfe7f4489182575ff9bd8698": {
       "decision": "REJECT",
@@ -20893,37 +20876,6 @@
         "overall_confidence:noncompensatory weighted confidence=0.000"
       ],
       "last_seen": "2026-10-28T07:48:37.617943+00:00"
-    },
-    "2e2d726bc253d13dff838dbee9d7ac16": {
-      "decision": "REJECT",
-      "event": "UNKNOWN",
-      "status": "UNKNOWN",
-      "reasons": [
-        "event_classification:conflicting or missing event classifications",
-        "entity_validation:mandatory person/club identity or relationship is unresolved",
-        "source_provenance:no verified authoritative source yet",
-        "source_url:authoritative source URL missing",
-        "event_status:status=UNKNOWN; publishable=False",
-        "official_confirmation:media/journalist evidence remains pending",
-        "mandatory_facts:missing=[]; unsupported=[]",
-        "temporal_consistency:awaiting authoritative timestamp",
-        "source_reliability:minimum authoritative reliability=0.000",
-        "overall_confidence:noncompensatory weighted confidence=0.000"
-      ],
-      "last_seen": "2026-10-26T13:46:14.305887+00:00"
-    },
-    "b40b9dd97df4b4fb559b031b6ba9237f": {
-      "decision": "DUPLICATE",
-      "event": "INJURY",
-      "status": "OFFICIAL",
-      "reasons": [
-        "mandatory_facts:missing=['injury_status']; unsupported=[]",
-        "temporal_consistency:official confirmation is 113.3h old",
-        "database_consistency:no new verified milestone or material fact",
-        "story_progression:no new verified milestone or material fact",
-        "overall_confidence:noncompensatory weighted confidence=0.000"
-      ],
-      "last_seen": "2026-10-26T13:46:19.751412+00:00"
     },
     "5841b918ebb62b2f7f53fc9c97523b5c": {
       "decision": "REJECT",
@@ -20995,25 +20947,7 @@
         "temporal_consistency:awaiting authoritative timestamp",
         "source_reliability:minimum authoritative reliability=0.000"
       ],
-      "last_seen": "2026-10-28T07:48:38.345091+00:00"
-    },
-    "bd83ab4121cd48d1e47e83b56f989c9e": {
-      "decision": "REJECT",
-      "event": "UNKNOWN",
-      "status": "UNKNOWN",
-      "reasons": [
-        "event_classification:conflicting or missing event classifications",
-        "article_category:rumour/opinion/analysis/preview/recap/interview/feature/editorial or unknown",
-        "entity_validation:mandatory person/club identity or relationship is unresolved",
-        "source_provenance:no verified authoritative source yet",
-        "source_url:authoritative source URL missing",
-        "event_status:status=UNKNOWN; publishable=False",
-        "official_confirmation:media/journalist evidence remains pending",
-        "mandatory_facts:missing=[]; unsupported=[]",
-        "temporal_consistency:awaiting authoritative timestamp",
-        "source_reliability:minimum authoritative reliability=0.000"
-      ],
-      "last_seen": "2026-10-26T13:45:55.452105+00:00"
+      "last_seen": "2026-10-28T14:38:23.370285+00:00"
     },
     "fe7836396372e8baeaa862dea39d12a0": {
       "decision": "REJECT",
@@ -21087,24 +21021,6 @@
       ],
       "last_seen": "2026-10-27T07:54:44.996991+00:00"
     },
-    "c5e68f4926ac530a95e5835ed6a8c615": {
-      "decision": "REJECT",
-      "event": "UNKNOWN",
-      "status": "UNKNOWN",
-      "reasons": [
-        "event_classification:conflicting or missing event classifications",
-        "entity_validation:mandatory person/club identity or relationship is unresolved",
-        "source_provenance:no verified authoritative source yet",
-        "source_url:authoritative source URL missing",
-        "event_status:status=UNKNOWN; publishable=False",
-        "official_confirmation:media/journalist evidence remains pending",
-        "mandatory_facts:missing=[]; unsupported=[]",
-        "temporal_consistency:awaiting authoritative timestamp",
-        "source_reliability:minimum authoritative reliability=0.000",
-        "overall_confidence:noncompensatory weighted confidence=0.000"
-      ],
-      "last_seen": "2026-10-26T06:57:33.404874+00:00"
-    },
     "31cdafef1883bca485f9cbe7400292ae": {
       "decision": "REJECT",
       "event": "UNKNOWN",
@@ -21123,107 +21039,6 @@
       ],
       "last_seen": "2026-10-26T13:46:25.300337+00:00"
     },
-    "aaddcb76113af8a6e9a53977da4ce88c": {
-      "decision": "REJECT",
-      "event": "UNKNOWN",
-      "status": "UNKNOWN",
-      "reasons": [
-        "event_classification:conflicting or missing event classifications",
-        "article_category:rumour/opinion/analysis/preview/recap/interview/feature/editorial or unknown",
-        "entity_validation:mandatory person/club identity or relationship is unresolved",
-        "source_provenance:no verified authoritative source yet",
-        "source_url:authoritative source URL missing",
-        "event_status:status=UNKNOWN; publishable=False",
-        "official_confirmation:media/journalist evidence remains pending",
-        "mandatory_facts:missing=[]; unsupported=[]",
-        "temporal_consistency:awaiting authoritative timestamp",
-        "source_reliability:minimum authoritative reliability=0.000"
-      ],
-      "last_seen": "2026-10-26T13:45:55.343400+00:00"
-    },
-    "60c0fcc7b8ec59fa561f0ff043298010": {
-      "decision": "REJECT",
-      "event": "UNKNOWN",
-      "status": "UNKNOWN",
-      "reasons": [
-        "event_classification:conflicting or missing event classifications",
-        "entity_validation:mandatory person/club identity or relationship is unresolved",
-        "source_provenance:no verified authoritative source yet",
-        "source_url:authoritative source URL missing",
-        "event_status:status=UNKNOWN; publishable=False",
-        "official_confirmation:media/journalist evidence remains pending",
-        "mandatory_facts:missing=[]; unsupported=[]",
-        "temporal_consistency:awaiting authoritative timestamp",
-        "source_reliability:minimum authoritative reliability=0.000",
-        "overall_confidence:noncompensatory weighted confidence=0.000"
-      ],
-      "last_seen": "2026-10-26T13:46:11.451645+00:00"
-    },
-    "10190babc7825d11699de1e3dc022feb": {
-      "decision": "REJECT",
-      "event": "UNKNOWN",
-      "status": "UNKNOWN",
-      "reasons": [
-        "event_classification:conflicting or missing event classifications",
-        "entity_validation:mandatory person/club identity or relationship is unresolved",
-        "source_provenance:no verified authoritative source yet",
-        "source_url:authoritative source URL missing",
-        "event_status:status=UNKNOWN; publishable=False",
-        "official_confirmation:media/journalist evidence remains pending",
-        "mandatory_facts:missing=[]; unsupported=[]",
-        "temporal_consistency:awaiting authoritative timestamp",
-        "source_reliability:minimum authoritative reliability=0.000",
-        "overall_confidence:noncompensatory weighted confidence=0.000"
-      ],
-      "last_seen": "2026-10-26T13:46:11.592045+00:00"
-    },
-    "3087bb7db50c46ae11635d2e10bacece": {
-      "decision": "REJECT",
-      "event": "UNKNOWN",
-      "status": "UNKNOWN",
-      "reasons": [
-        "event_classification:conflicting or missing event classifications",
-        "article_category:rumour/opinion/analysis/preview/recap/interview/feature/editorial or unknown",
-        "entity_validation:mandatory person/club identity or relationship is unresolved",
-        "source_provenance:no verified authoritative source yet",
-        "source_url:authoritative source URL missing",
-        "event_status:status=UNKNOWN; publishable=False",
-        "official_confirmation:media/journalist evidence remains pending",
-        "mandatory_facts:missing=[]; unsupported=[]",
-        "temporal_consistency:awaiting authoritative timestamp",
-        "source_reliability:minimum authoritative reliability=0.000"
-      ],
-      "last_seen": "2026-10-26T13:46:11.687922+00:00"
-    },
-    "fbdf8f4c74b10d2c0894aea3c4ebaefe": {
-      "decision": "REJECT",
-      "event": "TRANSFER",
-      "status": "COMPLETED",
-      "reasons": [
-        "entity_validation:mandatory person/club identity or relationship is unresolved",
-        "mandatory_facts:missing=['subject_id', 'subject_name', 'club_from_id', 'club_from_name']; unsupported=[]",
-        "overall_confidence:noncompensatory weighted confidence=0.000"
-      ],
-      "last_seen": "2026-10-26T13:46:17.957573+00:00"
-    },
-    "c1dca49e8d97379a5eae44c2497d190a": {
-      "decision": "REJECT",
-      "event": "UNKNOWN",
-      "status": "UNKNOWN",
-      "reasons": [
-        "event_classification:conflicting or missing event classifications",
-        "entity_validation:mandatory person/club identity or relationship is unresolved",
-        "source_provenance:no verified authoritative source yet",
-        "source_url:authoritative source URL missing",
-        "event_status:status=UNKNOWN; publishable=False",
-        "official_confirmation:media/journalist evidence remains pending",
-        "mandatory_facts:missing=[]; unsupported=[]",
-        "temporal_consistency:awaiting authoritative timestamp",
-        "source_reliability:minimum authoritative reliability=0.000",
-        "overall_confidence:noncompensatory weighted confidence=0.000"
-      ],
-      "last_seen": "2026-10-26T13:46:18.121096+00:00"
-    },
     "c3c51385a3bc3dc7d550d22e490d1c8a": {
       "decision": "REJECT",
       "event": "UNKNOWN",
@@ -21240,43 +21055,7 @@
         "temporal_consistency:awaiting authoritative timestamp",
         "source_reliability:minimum authoritative reliability=0.000"
       ],
-      "last_seen": "2026-10-28T07:48:43.417287+00:00"
-    },
-    "cc2f35408800b8ba942d3ad6cab7992a": {
-      "decision": "REJECT",
-      "event": "UNKNOWN",
-      "status": "UNKNOWN",
-      "reasons": [
-        "event_classification:conflicting or missing event classifications",
-        "entity_validation:mandatory person/club identity or relationship is unresolved",
-        "source_provenance:no verified authoritative source yet",
-        "source_url:authoritative source URL missing",
-        "event_status:status=UNKNOWN; publishable=False",
-        "official_confirmation:media/journalist evidence remains pending",
-        "mandatory_facts:missing=[]; unsupported=[]",
-        "temporal_consistency:awaiting authoritative timestamp",
-        "source_reliability:minimum authoritative reliability=0.000",
-        "overall_confidence:noncompensatory weighted confidence=0.000"
-      ],
-      "last_seen": "2026-10-26T13:46:18.291051+00:00"
-    },
-    "7fcae22e896cad1741b3f35255ddde48": {
-      "decision": "REJECT",
-      "event": "UNKNOWN",
-      "status": "UNKNOWN",
-      "reasons": [
-        "event_classification:conflicting or missing event classifications",
-        "entity_validation:mandatory person/club identity or relationship is unresolved",
-        "source_provenance:no verified authoritative source yet",
-        "source_url:authoritative source URL missing",
-        "event_status:status=UNKNOWN; publishable=False",
-        "official_confirmation:media/journalist evidence remains pending",
-        "mandatory_facts:missing=[]; unsupported=[]",
-        "temporal_consistency:awaiting authoritative timestamp",
-        "source_reliability:minimum authoritative reliability=0.000",
-        "overall_confidence:noncompensatory weighted confidence=0.000"
-      ],
-      "last_seen": "2026-10-26T13:46:20.260558+00:00"
+      "last_seen": "2026-10-28T14:38:34.202097+00:00"
     },
     "9726e990cc234142b012dd710c27bbc0": {
       "decision": "REJECT",
@@ -21285,28 +21064,10 @@
       "reasons": [
         "entity_validation:mandatory person/club identity or relationship is unresolved",
         "mandatory_facts:missing=['subject_id', 'subject_name', 'contract_length']; unsupported=[]",
-        "temporal_consistency:official confirmation is 116.3h old",
+        "temporal_consistency:official confirmation is 123.1h old",
         "overall_confidence:noncompensatory weighted confidence=0.000"
       ],
-      "last_seen": "2026-10-28T07:48:45.042729+00:00"
-    },
-    "bfede91900ee3ceccab95cca7e9ac21d": {
-      "decision": "REJECT",
-      "event": "UNKNOWN",
-      "status": "UNKNOWN",
-      "reasons": [
-        "event_classification:conflicting or missing event classifications",
-        "entity_validation:mandatory person/club identity or relationship is unresolved",
-        "source_provenance:no verified authoritative source yet",
-        "source_url:authoritative source URL missing",
-        "event_status:status=UNKNOWN; publishable=False",
-        "official_confirmation:media/journalist evidence remains pending",
-        "mandatory_facts:missing=[]; unsupported=[]",
-        "temporal_consistency:awaiting authoritative timestamp",
-        "source_reliability:minimum authoritative reliability=0.000",
-        "overall_confidence:noncompensatory weighted confidence=0.000"
-      ],
-      "last_seen": "2026-10-26T13:46:21.550070+00:00"
+      "last_seen": "2026-10-28T14:38:39.176256+00:00"
     },
     "2257aa5db676fd8c086cb6f85e9a3524": {
       "decision": "REJECT",
@@ -21324,7 +21085,7 @@
         "source_reliability:minimum authoritative reliability=0.000",
         "overall_confidence:noncompensatory weighted confidence=0.000"
       ],
-      "last_seen": "2026-10-28T07:48:31.772008+00:00"
+      "last_seen": "2026-10-28T14:38:14.688111+00:00"
     },
     "726e9b0e34ed678af29a9d305acbbdff": {
       "decision": "REJECT",
@@ -21343,17 +21104,6 @@
         "source_reliability:minimum authoritative reliability=0.000"
       ],
       "last_seen": "2026-10-27T02:09:47.392045+00:00"
-    },
-    "9323d98ea0cc7a445ee1095c069017b2": {
-      "decision": "DUPLICATE",
-      "event": "INJURY",
-      "status": "OFFICIAL",
-      "reasons": [
-        "database_consistency:identical verified facts already published",
-        "story_progression:identical verified facts already published",
-        "overall_confidence:noncompensatory weighted confidence=0.000"
-      ],
-      "last_seen": "2026-10-26T06:57:32.578474+00:00"
     },
     "ac346912d34703b30bc34f7ac260d4b6": {
       "decision": "REJECT",
@@ -21391,41 +21141,6 @@
       ],
       "last_seen": "2026-10-26T19:39:14.977013+00:00"
     },
-    "c1b1a28cc52522694ed472409c5b8d9b": {
-      "decision": "REJECT",
-      "event": "UNKNOWN",
-      "status": "UNKNOWN",
-      "reasons": [
-        "event_classification:conflicting or missing event classifications",
-        "article_category:rumour/opinion/analysis/preview/recap/interview/feature/editorial or unknown",
-        "entity_validation:mandatory person/club identity or relationship is unresolved",
-        "sport_validation:football was not positively established",
-        "league_validation:no active Premier League relationship",
-        "source_provenance:no verified authoritative source yet",
-        "source_url:authoritative source URL missing",
-        "event_status:status=UNKNOWN; publishable=False",
-        "official_confirmation:media/journalist evidence remains pending",
-        "mandatory_facts:missing=[]; unsupported=[]"
-      ],
-      "last_seen": "2026-10-26T13:46:08.460574+00:00"
-    },
-    "ba08fd40161669287c45c029467adf3b": {
-      "decision": "REJECT",
-      "event": "INJURY",
-      "status": "UNKNOWN",
-      "reasons": [
-        "entity_validation:mandatory person/club identity or relationship is unresolved",
-        "source_provenance:no verified authoritative source yet",
-        "source_url:authoritative source URL missing",
-        "event_status:status=UNKNOWN; publishable=False",
-        "official_confirmation:media/journalist evidence remains pending",
-        "mandatory_facts:missing=['subject_id', 'subject_name', 'club_id', 'club_name', 'injury_status']; unsupported=[]",
-        "temporal_consistency:awaiting authoritative timestamp",
-        "source_reliability:minimum authoritative reliability=0.000",
-        "overall_confidence:noncompensatory weighted confidence=0.000"
-      ],
-      "last_seen": "2026-10-26T13:46:13.114851+00:00"
-    },
     "077b6422e5e87f8b00b0742ae98a2dcd": {
       "decision": "REJECT",
       "event": "UNKNOWN",
@@ -21443,19 +21158,6 @@
         "mandatory_facts:missing=[]; unsupported=[]"
       ],
       "last_seen": "2026-10-27T07:54:44.913493+00:00"
-    },
-    "54830ff08c94ad7e101ba13a2cbf7d03": {
-      "decision": "REJECT",
-      "event": "PRESS_CONFERENCE",
-      "status": "OFFICIAL",
-      "reasons": [
-        "entity_validation:mandatory person/club identity or relationship is unresolved",
-        "mandatory_facts:missing=['subject_id', 'subject_name', 'quote_summary']; unsupported=[]",
-        "fact_consensus:conflicts={'quote_summary': {'alonso press conference video official site chelsea football club': ['club.chelsea'], 'on demand moyes pre chelsea press conference': ['club.everton'], 'every word of renee s pre chelsea press conference arsenal': ['club.arsenal']}}",
-        "temporal_consistency:official confirmation is 812.3h old",
-        "overall_confidence:noncompensatory weighted confidence=0.000"
-      ],
-      "last_seen": "2026-10-26T13:46:21.775769+00:00"
     },
     "c223c155cbd7cd6db6dbf3f017c27324": {
       "decision": "REJECT",
@@ -21480,28 +21182,10 @@
       "event": "INJURY",
       "status": "OFFICIAL",
       "reasons": [
-        "temporal_consistency:official confirmation is 110.8h old",
+        "temporal_consistency:official confirmation is 117.6h old",
         "overall_confidence:noncompensatory weighted confidence=0.000"
       ],
-      "last_seen": "2026-10-28T07:48:30.351890+00:00"
-    },
-    "2f1a0fee9bd9512a37490b08327b48c6": {
-      "decision": "REJECT",
-      "event": "UNKNOWN",
-      "status": "UNKNOWN",
-      "reasons": [
-        "event_classification:conflicting or missing event classifications",
-        "article_category:rumour/opinion/analysis/preview/recap/interview/feature/editorial or unknown",
-        "entity_validation:mandatory person/club identity or relationship is unresolved",
-        "source_provenance:no verified authoritative source yet",
-        "source_url:authoritative source URL missing",
-        "event_status:status=UNKNOWN; publishable=False",
-        "official_confirmation:media/journalist evidence remains pending",
-        "mandatory_facts:missing=[]; unsupported=[]",
-        "temporal_consistency:awaiting authoritative timestamp",
-        "source_reliability:minimum authoritative reliability=0.000"
-      ],
-      "last_seen": "2026-10-26T13:46:12.925366+00:00"
+      "last_seen": "2026-10-28T14:38:12.186857+00:00"
     },
     "d1c39e32e8310aa0371c467f001e901e": {
       "decision": "REJECT",
@@ -21548,7 +21232,7 @@
         "source_reliability:minimum authoritative reliability=0.000",
         "overall_confidence:noncompensatory weighted confidence=0.000"
       ],
-      "last_seen": "2026-10-28T07:48:38.030845+00:00"
+      "last_seen": "2026-10-28T14:38:23.228881+00:00"
     },
     "c33042d6631972672e75b072dbeb363d": {
       "decision": "REJECT",
@@ -21712,60 +21396,6 @@
       ],
       "last_seen": "2026-10-27T07:54:36.209091+00:00"
     },
-    "1a2b562d6eda64391551255aa48c37d4": {
-      "decision": "REJECT",
-      "event": "UNKNOWN",
-      "status": "UNKNOWN",
-      "reasons": [
-        "event_classification:conflicting or missing event classifications",
-        "entity_validation:mandatory person/club identity or relationship is unresolved",
-        "sport_validation:football was not positively established",
-        "league_validation:no active Premier League relationship",
-        "source_provenance:no verified authoritative source yet",
-        "source_url:authoritative source URL missing",
-        "event_status:status=UNKNOWN; publishable=False",
-        "official_confirmation:media/journalist evidence remains pending",
-        "mandatory_facts:missing=[]; unsupported=[]",
-        "temporal_consistency:awaiting authoritative timestamp"
-      ],
-      "last_seen": "2026-10-26T13:46:15.833850+00:00"
-    },
-    "60497785fc81a54648604fcbb6143804": {
-      "decision": "REJECT",
-      "event": "UNKNOWN",
-      "status": "UNKNOWN",
-      "reasons": [
-        "event_classification:conflicting or missing event classifications",
-        "article_category:rumour/opinion/analysis/preview/recap/interview/feature/editorial or unknown",
-        "entity_validation:mandatory person/club identity or relationship is unresolved",
-        "source_provenance:no verified authoritative source yet",
-        "source_url:authoritative source URL missing",
-        "event_status:status=UNKNOWN; publishable=False",
-        "official_confirmation:media/journalist evidence remains pending",
-        "mandatory_facts:missing=[]; unsupported=[]",
-        "temporal_consistency:awaiting authoritative timestamp",
-        "source_reliability:minimum authoritative reliability=0.000"
-      ],
-      "last_seen": "2026-10-26T13:46:20.356079+00:00"
-    },
-    "9ca49c86f5f50f0f99e73ca27a191d61": {
-      "decision": "REJECT",
-      "event": "UNKNOWN",
-      "status": "UNKNOWN",
-      "reasons": [
-        "event_classification:conflicting or missing event classifications",
-        "entity_validation:mandatory person/club identity or relationship is unresolved",
-        "sport_validation:football was not positively established",
-        "league_validation:no active Premier League relationship",
-        "source_provenance:no verified authoritative source yet",
-        "source_url:authoritative source URL missing",
-        "event_status:status=UNKNOWN; publishable=False",
-        "official_confirmation:media/journalist evidence remains pending",
-        "mandatory_facts:missing=[]; unsupported=[]",
-        "temporal_consistency:awaiting authoritative timestamp"
-      ],
-      "last_seen": "2026-10-26T13:45:54.444484+00:00"
-    },
     "ba1586028a8e7ba87bb51cc0539caf99": {
       "decision": "REJECT",
       "event": "UNKNOWN",
@@ -21783,24 +21413,6 @@
         "overall_confidence:noncompensatory weighted confidence=0.000"
       ],
       "last_seen": "2026-10-27T19:07:26.231088+00:00"
-    },
-    "887048963574bb3ee2111364203789ab": {
-      "decision": "REJECT",
-      "event": "UNKNOWN",
-      "status": "UNKNOWN",
-      "reasons": [
-        "event_classification:conflicting or missing event classifications",
-        "article_category:rumour/opinion/analysis/preview/recap/interview/feature/editorial or unknown",
-        "entity_validation:mandatory person/club identity or relationship is unresolved",
-        "source_provenance:no verified authoritative source yet",
-        "source_url:authoritative source URL missing",
-        "event_status:status=UNKNOWN; publishable=False",
-        "official_confirmation:media/journalist evidence remains pending",
-        "mandatory_facts:missing=[]; unsupported=[]",
-        "temporal_consistency:awaiting authoritative timestamp",
-        "source_reliability:minimum authoritative reliability=0.000"
-      ],
-      "last_seen": "2026-10-26T13:46:12.828973+00:00"
     },
     "666279a06685529997c629a348daaafc": {
       "decision": "REJECT",
@@ -21928,24 +21540,6 @@
       ],
       "last_seen": "2026-10-27T07:54:44.813885+00:00"
     },
-    "c5dc0f82e8a99bdf448c68ca64f1060e": {
-      "decision": "REJECT",
-      "event": "UNKNOWN",
-      "status": "UNKNOWN",
-      "reasons": [
-        "event_classification:conflicting or missing event classifications",
-        "article_category:rumour/opinion/analysis/preview/recap/interview/feature/editorial or unknown",
-        "entity_validation:mandatory person/club identity or relationship is unresolved",
-        "source_provenance:no verified authoritative source yet",
-        "source_url:authoritative source URL missing",
-        "event_status:status=UNKNOWN; publishable=False",
-        "official_confirmation:media/journalist evidence remains pending",
-        "mandatory_facts:missing=[]; unsupported=[]",
-        "temporal_consistency:awaiting authoritative timestamp",
-        "source_reliability:minimum authoritative reliability=0.000"
-      ],
-      "last_seen": "2026-10-26T13:46:20.060929+00:00"
-    },
     "a357e209502244a81075ace76e581407": {
       "decision": "REJECT",
       "event": "UNKNOWN",
@@ -22064,24 +21658,6 @@
       ],
       "last_seen": "2026-10-27T07:54:33.237147+00:00"
     },
-    "cf6a8c29fa3c06893434d9306d1f1c91": {
-      "decision": "REJECT",
-      "event": "UNKNOWN",
-      "status": "UNKNOWN",
-      "reasons": [
-        "event_classification:conflicting or missing event classifications",
-        "entity_validation:mandatory person/club identity or relationship is unresolved",
-        "source_provenance:no verified authoritative source yet",
-        "source_url:authoritative source URL missing",
-        "event_status:status=UNKNOWN; publishable=False",
-        "official_confirmation:media/journalist evidence remains pending",
-        "mandatory_facts:missing=[]; unsupported=[]",
-        "temporal_consistency:awaiting authoritative timestamp",
-        "source_reliability:minimum authoritative reliability=0.000",
-        "overall_confidence:noncompensatory weighted confidence=0.000"
-      ],
-      "last_seen": "2026-10-26T13:46:10.210038+00:00"
-    },
     "4c0e4e82a6f91f2ecdb950078b8670ba": {
       "decision": "REJECT",
       "event": "INJURY",
@@ -22089,10 +21665,10 @@
       "reasons": [
         "entity_validation:mandatory person/club identity or relationship is unresolved",
         "mandatory_facts:missing=['subject_id', 'subject_name']; unsupported=[]",
-        "temporal_consistency:official confirmation is 232.3h old",
+        "temporal_consistency:official confirmation is 239.2h old",
         "overall_confidence:noncompensatory weighted confidence=0.000"
       ],
-      "last_seen": "2026-10-28T07:48:36.307234+00:00"
+      "last_seen": "2026-10-28T14:38:20.837506+00:00"
     },
     "6496206cd08de069acca24563d5a1c9f": {
       "decision": "REJECT",
@@ -22141,24 +21717,6 @@
       ],
       "last_seen": "2026-10-27T07:54:38.821997+00:00"
     },
-    "fa099403f131e4c1c7b963446822e8f7": {
-      "decision": "REJECT",
-      "event": "UNKNOWN",
-      "status": "UNKNOWN",
-      "reasons": [
-        "event_classification:conflicting or missing event classifications",
-        "entity_validation:mandatory person/club identity or relationship is unresolved",
-        "sport_validation:football was not positively established",
-        "league_validation:no active Premier League relationship",
-        "source_provenance:no verified authoritative source yet",
-        "source_url:authoritative source URL missing",
-        "event_status:status=UNKNOWN; publishable=False",
-        "official_confirmation:media/journalist evidence remains pending",
-        "mandatory_facts:missing=[]; unsupported=[]",
-        "temporal_consistency:awaiting authoritative timestamp"
-      ],
-      "last_seen": "2026-10-26T13:46:12.653823+00:00"
-    },
     "cc1373222639d7459c946b741e55adee": {
       "decision": "REJECT",
       "event": "UNKNOWN",
@@ -22176,60 +21734,6 @@
         "temporal_consistency:awaiting authoritative timestamp"
       ],
       "last_seen": "2026-10-27T07:54:41.737402+00:00"
-    },
-    "aa04dd8b3eebd369edb4e06e01aad315": {
-      "decision": "REJECT",
-      "event": "UNKNOWN",
-      "status": "UNKNOWN",
-      "reasons": [
-        "event_classification:conflicting or missing event classifications",
-        "entity_validation:mandatory person/club identity or relationship is unresolved",
-        "sport_validation:football was not positively established",
-        "league_validation:no active Premier League relationship",
-        "source_provenance:no verified authoritative source yet",
-        "source_url:authoritative source URL missing",
-        "event_status:status=UNKNOWN; publishable=False",
-        "official_confirmation:media/journalist evidence remains pending",
-        "mandatory_facts:missing=[]; unsupported=[]",
-        "temporal_consistency:awaiting authoritative timestamp"
-      ],
-      "last_seen": "2026-10-26T13:46:15.501074+00:00"
-    },
-    "7dd3944157ba646d5958119247805f4d": {
-      "decision": "REJECT",
-      "event": "UNKNOWN",
-      "status": "UNKNOWN",
-      "reasons": [
-        "event_classification:conflicting or missing event classifications",
-        "entity_validation:mandatory person/club identity or relationship is unresolved",
-        "sport_validation:football was not positively established",
-        "league_validation:no active Premier League relationship",
-        "source_provenance:no verified authoritative source yet",
-        "source_url:authoritative source URL missing",
-        "event_status:status=UNKNOWN; publishable=False",
-        "official_confirmation:media/journalist evidence remains pending",
-        "mandatory_facts:missing=[]; unsupported=[]",
-        "temporal_consistency:awaiting authoritative timestamp"
-      ],
-      "last_seen": "2026-10-26T13:46:15.612638+00:00"
-    },
-    "e1219c2c16d97f36627cf168a9f22a5d": {
-      "decision": "REJECT",
-      "event": "UNKNOWN",
-      "status": "UNKNOWN",
-      "reasons": [
-        "event_classification:conflicting or missing event classifications",
-        "entity_validation:mandatory person/club identity or relationship is unresolved",
-        "sport_validation:football was not positively established",
-        "league_validation:no active Premier League relationship",
-        "source_provenance:no verified authoritative source yet",
-        "source_url:authoritative source URL missing",
-        "event_status:status=UNKNOWN; publishable=False",
-        "official_confirmation:media/journalist evidence remains pending",
-        "mandatory_facts:missing=[]; unsupported=[]",
-        "temporal_consistency:awaiting authoritative timestamp"
-      ],
-      "last_seen": "2026-10-26T13:46:15.720285+00:00"
     },
     "3133a826b4bec5243c45a58cf1dd72d9": {
       "decision": "REJECT",
@@ -22290,12 +21794,12 @@
       "event": "INJURY",
       "status": "OFFICIAL",
       "reasons": [
-        "temporal_consistency:official confirmation is 87.3h old",
+        "temporal_consistency:official confirmation is 94.1h old",
         "database_consistency:identical verified facts already published",
         "story_progression:identical verified facts already published",
         "overall_confidence:noncompensatory weighted confidence=0.000"
       ],
-      "last_seen": "2026-10-28T07:48:30.612940+00:00"
+      "last_seen": "2026-10-28T14:38:11.897098+00:00"
     },
     "ca8e5997549919dd9a46dd31c96f0fef": {
       "decision": "REJECT",
@@ -22314,24 +21818,6 @@
         "overall_confidence:noncompensatory weighted confidence=0.000"
       ],
       "last_seen": "2026-10-27T13:43:35.362309+00:00"
-    },
-    "43ad92b7745ad5ad929195715e58e727": {
-      "decision": "REJECT",
-      "event": "UNKNOWN",
-      "status": "UNKNOWN",
-      "reasons": [
-        "event_classification:conflicting or missing event classifications",
-        "entity_validation:mandatory person/club identity or relationship is unresolved",
-        "source_provenance:no verified authoritative source yet",
-        "source_url:authoritative source URL missing",
-        "event_status:status=UNKNOWN; publishable=False",
-        "official_confirmation:media/journalist evidence remains pending",
-        "mandatory_facts:missing=[]; unsupported=[]",
-        "temporal_consistency:awaiting authoritative timestamp",
-        "source_reliability:minimum authoritative reliability=0.000",
-        "overall_confidence:noncompensatory weighted confidence=0.000"
-      ],
-      "last_seen": "2026-10-26T13:45:58.151809+00:00"
     },
     "cc3e82a75b88fb5a3f9751833e85ebd1": {
       "decision": "REJECT",
@@ -22367,25 +21853,7 @@
         "temporal_consistency:awaiting authoritative timestamp",
         "source_reliability:minimum authoritative reliability=0.000"
       ],
-      "last_seen": "2026-10-28T07:48:40.491560+00:00"
-    },
-    "e2d65407e73f3ad1f8da68041791c1e1": {
-      "decision": "REJECT",
-      "event": "UNKNOWN",
-      "status": "UNKNOWN",
-      "reasons": [
-        "event_classification:conflicting or missing event classifications",
-        "entity_validation:mandatory person/club identity or relationship is unresolved",
-        "source_provenance:no verified authoritative source yet",
-        "source_url:authoritative source URL missing",
-        "event_status:status=UNKNOWN; publishable=False",
-        "official_confirmation:media/journalist evidence remains pending",
-        "mandatory_facts:missing=[]; unsupported=[]",
-        "temporal_consistency:awaiting authoritative timestamp",
-        "source_reliability:minimum authoritative reliability=0.000",
-        "overall_confidence:noncompensatory weighted confidence=0.000"
-      ],
-      "last_seen": "2026-10-26T13:46:02.956195+00:00"
+      "last_seen": "2026-10-28T14:38:27.526084+00:00"
     },
     "157479f018e4cdd05c2ad27000c79bc6": {
       "decision": "REJECT",
@@ -22404,24 +21872,6 @@
         "overall_confidence:noncompensatory weighted confidence=0.000"
       ],
       "last_seen": "2026-10-26T19:39:12.391378+00:00"
-    },
-    "0337fa6974641712b425d8d710194751": {
-      "decision": "REJECT",
-      "event": "UNKNOWN",
-      "status": "UNKNOWN",
-      "reasons": [
-        "event_classification:conflicting or missing event classifications",
-        "article_category:rumour/opinion/analysis/preview/recap/interview/feature/editorial or unknown",
-        "entity_validation:mandatory person/club identity or relationship is unresolved",
-        "source_provenance:no verified authoritative source yet",
-        "source_url:authoritative source URL missing",
-        "event_status:status=UNKNOWN; publishable=False",
-        "official_confirmation:media/journalist evidence remains pending",
-        "mandatory_facts:missing=[]; unsupported=[]",
-        "temporal_consistency:awaiting authoritative timestamp",
-        "source_reliability:minimum authoritative reliability=0.000"
-      ],
-      "last_seen": "2026-10-26T13:46:07.086866+00:00"
     },
     "72a9376dc9db94b087263bf9692223b5": {
       "decision": "REJECT",
@@ -22640,6 +22090,7 @@
       "status": "UNKNOWN",
       "reasons": [
         "event_classification:conflicting or missing event classifications",
+        "article_category:rumour/opinion/analysis/preview/recap/interview/feature/editorial or unknown",
         "entity_validation:mandatory person/club identity or relationship is unresolved",
         "source_provenance:no verified authoritative source yet",
         "source_url:authoritative source URL missing",
@@ -22647,10 +22098,9 @@
         "official_confirmation:media/journalist evidence remains pending",
         "mandatory_facts:missing=[]; unsupported=[]",
         "temporal_consistency:awaiting authoritative timestamp",
-        "source_reliability:minimum authoritative reliability=0.000",
-        "overall_confidence:noncompensatory weighted confidence=0.000"
+        "source_reliability:minimum authoritative reliability=0.000"
       ],
-      "last_seen": "2026-10-28T07:48:29.890165+00:00"
+      "last_seen": "2026-10-28T14:38:12.931621+00:00"
     },
     "7b44c282ea2ff1c54a26ee407a8ded48": {
       "decision": "PENDING",
@@ -22679,24 +22129,6 @@
         "source_reliability:minimum authoritative reliability=0.000"
       ],
       "last_seen": "2026-10-26T19:39:01.212754+00:00"
-    },
-    "7c55c1b80d07ef6b94464eed3d992a05": {
-      "decision": "REJECT",
-      "event": "UNKNOWN",
-      "status": "UNKNOWN",
-      "reasons": [
-        "event_classification:conflicting or missing event classifications",
-        "entity_validation:mandatory person/club identity or relationship is unresolved",
-        "source_provenance:no verified authoritative source yet",
-        "source_url:authoritative source URL missing",
-        "event_status:status=UNKNOWN; publishable=False",
-        "official_confirmation:media/journalist evidence remains pending",
-        "mandatory_facts:missing=[]; unsupported=[]",
-        "temporal_consistency:awaiting authoritative timestamp",
-        "source_reliability:minimum authoritative reliability=0.000",
-        "overall_confidence:noncompensatory weighted confidence=0.000"
-      ],
-      "last_seen": "2026-10-26T13:45:56.395872+00:00"
     },
     "b54adf90b852774ccf99845fd9881c23": {
       "decision": "REJECT",
@@ -22931,24 +22363,6 @@
       ],
       "last_seen": "2026-10-27T13:43:33.472261+00:00"
     },
-    "8d5301c0d3016bf5001f86c147a93b78": {
-      "decision": "REJECT",
-      "event": "UNKNOWN",
-      "status": "UNKNOWN",
-      "reasons": [
-        "event_classification:conflicting or missing event classifications",
-        "entity_validation:mandatory person/club identity or relationship is unresolved",
-        "source_provenance:no verified authoritative source yet",
-        "source_url:authoritative source URL missing",
-        "event_status:status=UNKNOWN; publishable=False",
-        "official_confirmation:media/journalist evidence remains pending",
-        "mandatory_facts:missing=[]; unsupported=[]",
-        "temporal_consistency:awaiting authoritative timestamp",
-        "source_reliability:minimum authoritative reliability=0.000",
-        "overall_confidence:noncompensatory weighted confidence=0.000"
-      ],
-      "last_seen": "2026-10-26T13:45:56.293851+00:00"
-    },
     "0a7b9615ca399f5306f37131e072ad15": {
       "decision": "REJECT",
       "event": "UNKNOWN",
@@ -22967,24 +22381,6 @@
       ],
       "last_seen": "2026-10-27T02:09:36.113462+00:00"
     },
-    "b9c8c05ba91ed005dc8568720e7ff852": {
-      "decision": "REJECT",
-      "event": "UNKNOWN",
-      "status": "UNKNOWN",
-      "reasons": [
-        "event_classification:conflicting or missing event classifications",
-        "entity_validation:mandatory person/club identity or relationship is unresolved",
-        "source_provenance:no verified authoritative source yet",
-        "source_url:authoritative source URL missing",
-        "event_status:status=UNKNOWN; publishable=False",
-        "official_confirmation:media/journalist evidence remains pending",
-        "mandatory_facts:missing=[]; unsupported=[]",
-        "temporal_consistency:awaiting authoritative timestamp",
-        "source_reliability:minimum authoritative reliability=0.000",
-        "overall_confidence:noncompensatory weighted confidence=0.000"
-      ],
-      "last_seen": "2026-10-26T13:45:53.984189+00:00"
-    },
     "1eb219af61552a3339bd61e940badfe2": {
       "decision": "REJECT",
       "event": "UNKNOWN",
@@ -23002,24 +22398,6 @@
         "overall_confidence:noncompensatory weighted confidence=0.000"
       ],
       "last_seen": "2026-10-27T07:54:27.941722+00:00"
-    },
-    "44683862fd1ebb6afa195b5a95c3fc79": {
-      "decision": "REJECT",
-      "event": "UNKNOWN",
-      "status": "UNKNOWN",
-      "reasons": [
-        "event_classification:conflicting or missing event classifications",
-        "entity_validation:mandatory person/club identity or relationship is unresolved",
-        "sport_validation:football was not positively established",
-        "league_validation:no active Premier League relationship",
-        "source_provenance:no verified authoritative source yet",
-        "source_url:authoritative source URL missing",
-        "event_status:status=UNKNOWN; publishable=False",
-        "official_confirmation:media/journalist evidence remains pending",
-        "mandatory_facts:missing=[]; unsupported=[]",
-        "temporal_consistency:awaiting authoritative timestamp"
-      ],
-      "last_seen": "2026-10-26T13:46:02.722264+00:00"
     },
     "c802f05c5ba7902ffab60adafb1aa44c": {
       "decision": "REJECT",
@@ -23180,7 +22558,7 @@
         "source_reliability:minimum authoritative reliability=0.000",
         "overall_confidence:noncompensatory weighted confidence=0.000"
       ],
-      "last_seen": "2026-10-26T13:45:59.002831+00:00"
+      "last_seen": "2026-10-28T14:38:18.483826+00:00"
     },
     "1042636569fcdf8ce73f9f60b7fe4c92": {
       "decision": "REJECT",
@@ -23216,7 +22594,7 @@
         "source_reliability:minimum authoritative reliability=0.000",
         "overall_confidence:noncompensatory weighted confidence=0.000"
       ],
-      "last_seen": "2026-10-28T07:48:37.544207+00:00"
+      "last_seen": "2026-10-28T14:38:22.681392+00:00"
     },
     "a27a27c0606946a84e15da449d8c7f01": {
       "decision": "REJECT",
@@ -23326,24 +22704,6 @@
       ],
       "last_seen": "2026-10-27T13:43:29.949107+00:00"
     },
-    "9c6f3909d4ffeef66d56d0b852625e49": {
-      "decision": "REJECT",
-      "event": "TRANSFER",
-      "status": "RUMOUR",
-      "reasons": [
-        "entity_validation:mandatory person/club identity or relationship is unresolved",
-        "sport_validation:football was not positively established",
-        "league_validation:no active Premier League relationship",
-        "source_provenance:no verified authoritative source yet",
-        "source_url:authoritative source URL missing",
-        "event_status:status=RUMOUR; publishable=False",
-        "official_confirmation:media/journalist evidence remains pending",
-        "mandatory_facts:missing=['subject_id', 'subject_name', 'club_from_id', 'club_from_name', 'club_to_id', 'club_to_name']; unsupported=[]",
-        "temporal_consistency:awaiting authoritative timestamp",
-        "source_reliability:minimum authoritative reliability=0.000"
-      ],
-      "last_seen": "2026-10-26T13:46:14.030202+00:00"
-    },
     "9b9ca7f222323c2838276dc5d83b25f6": {
       "decision": "PENDING",
       "event": "INJURY",
@@ -23430,7 +22790,7 @@
         "source_reliability:minimum authoritative reliability=0.000",
         "overall_confidence:noncompensatory weighted confidence=0.000"
       ],
-      "last_seen": "2026-10-28T07:48:45.914362+00:00"
+      "last_seen": "2026-10-28T14:38:40.299347+00:00"
     },
     "eb741d5b429707bfa3e0246ceeb4c445": {
       "decision": "REJECT",
@@ -23448,7 +22808,7 @@
         "source_reliability:minimum authoritative reliability=0.000",
         "overall_confidence:noncompensatory weighted confidence=0.000"
       ],
-      "last_seen": "2026-10-28T07:48:31.879609+00:00"
+      "last_seen": "2026-10-28T14:38:14.949947+00:00"
     },
     "f75a6209fd621c2b81e0ad258753edf5": {
       "decision": "REJECT",
@@ -23468,24 +22828,6 @@
       ],
       "last_seen": "2026-10-27T13:43:24.005637+00:00"
     },
-    "7074b4a7a3fd3cc9b406b1556373467d": {
-      "decision": "REJECT",
-      "event": "UNKNOWN",
-      "status": "UNKNOWN",
-      "reasons": [
-        "event_classification:conflicting or missing event classifications",
-        "entity_validation:mandatory person/club identity or relationship is unresolved",
-        "source_provenance:no verified authoritative source yet",
-        "source_url:authoritative source URL missing",
-        "event_status:status=UNKNOWN; publishable=False",
-        "official_confirmation:media/journalist evidence remains pending",
-        "mandatory_facts:missing=[]; unsupported=[]",
-        "temporal_consistency:awaiting authoritative timestamp",
-        "source_reliability:minimum authoritative reliability=0.000",
-        "overall_confidence:noncompensatory weighted confidence=0.000"
-      ],
-      "last_seen": "2026-10-26T13:46:02.595102+00:00"
-    },
     "96cdc1f4d100204776fd89df87a3b62c": {
       "decision": "REJECT",
       "event": "UNKNOWN",
@@ -23502,7 +22844,7 @@
         "source_reliability:minimum authoritative reliability=0.000",
         "overall_confidence:noncompensatory weighted confidence=0.000"
       ],
-      "last_seen": "2026-10-28T07:48:32.248149+00:00"
+      "last_seen": "2026-10-28T14:38:15.520171+00:00"
     },
     "130a52f7b72924c704ab3518c05ba86e": {
       "decision": "REJECT",
@@ -23540,24 +22882,6 @@
       ],
       "last_seen": "2026-10-28T01:58:57.508378+00:00"
     },
-    "c7f2e78127c78f154dbfc4709259f801": {
-      "decision": "REJECT",
-      "event": "UNKNOWN",
-      "status": "UNKNOWN",
-      "reasons": [
-        "event_classification:conflicting or missing event classifications",
-        "entity_validation:mandatory person/club identity or relationship is unresolved",
-        "sport_validation:football was not positively established",
-        "league_validation:no active Premier League relationship",
-        "source_provenance:no verified authoritative source yet",
-        "source_url:authoritative source URL missing",
-        "event_status:status=UNKNOWN; publishable=False",
-        "official_confirmation:media/journalist evidence remains pending",
-        "mandatory_facts:missing=[]; unsupported=[]",
-        "temporal_consistency:awaiting authoritative timestamp"
-      ],
-      "last_seen": "2026-10-26T13:46:06.015901+00:00"
-    },
     "cfb5c870df2bf5847932648c958a14dc": {
       "decision": "REJECT",
       "event": "UNKNOWN",
@@ -23592,7 +22916,7 @@
         "temporal_consistency:awaiting authoritative timestamp",
         "source_reliability:minimum authoritative reliability=0.000"
       ],
-      "last_seen": "2026-10-27T13:43:27.051263+00:00"
+      "last_seen": "2026-10-28T14:38:16.811582+00:00"
     },
     "2a4c553d5e66ea647c3114fad8b3d562": {
       "decision": "REJECT",
@@ -23610,7 +22934,7 @@
         "official_confirmation:media/journalist evidence remains pending",
         "mandatory_facts:missing=[]; unsupported=[]"
       ],
-      "last_seen": "2026-10-28T07:48:38.960289+00:00"
+      "last_seen": "2026-10-28T14:38:24.716478+00:00"
     },
     "33a734b8dbc8f1fe8e8daf24df56737e": {
       "decision": "REJECT",
@@ -23628,7 +22952,7 @@
         "official_confirmation:media/journalist evidence remains pending",
         "mandatory_facts:missing=[]; unsupported=[]"
       ],
-      "last_seen": "2026-10-28T07:48:39.007792+00:00"
+      "last_seen": "2026-10-28T14:38:24.774008+00:00"
     },
     "02b4544a90575a4fcb8a51e7a09f8db7": {
       "decision": "REJECT",
@@ -23646,7 +22970,7 @@
         "mandatory_facts:missing=[]; unsupported=[]",
         "temporal_consistency:awaiting authoritative timestamp"
       ],
-      "last_seen": "2026-10-28T07:48:39.060656+00:00"
+      "last_seen": "2026-10-28T14:38:24.839144+00:00"
     },
     "13f8fce74f3cb1e1950e55e6aa305582": {
       "decision": "REJECT",
@@ -23664,7 +22988,7 @@
         "official_confirmation:media/journalist evidence remains pending",
         "mandatory_facts:missing=[]; unsupported=[]"
       ],
-      "last_seen": "2026-10-28T07:48:39.111396+00:00"
+      "last_seen": "2026-10-28T14:38:24.899441+00:00"
     },
     "dc04f08b6cea6564e790982cc73adce4": {
       "decision": "REJECT",
@@ -23700,7 +23024,7 @@
         "temporal_consistency:awaiting authoritative timestamp",
         "source_reliability:minimum authoritative reliability=0.000"
       ],
-      "last_seen": "2026-10-28T07:48:40.470828+00:00"
+      "last_seen": "2026-10-28T14:38:27.483629+00:00"
     },
     "f95d3970f7c4ec825f6d5318853b094e": {
       "decision": "REJECT",
@@ -23736,7 +23060,7 @@
         "mandatory_facts:missing=[]; unsupported=[]",
         "temporal_consistency:awaiting authoritative timestamp"
       ],
-      "last_seen": "2026-10-28T07:48:42.932070+00:00"
+      "last_seen": "2026-10-28T14:38:33.142789+00:00"
     },
     "0b4fe1a94fe1d7380bf6d4b1feb327cc": {
       "decision": "REJECT",
@@ -23754,7 +23078,7 @@
         "source_reliability:minimum authoritative reliability=0.000",
         "overall_confidence:noncompensatory weighted confidence=0.000"
       ],
-      "last_seen": "2026-10-28T07:48:44.264206+00:00"
+      "last_seen": "2026-10-28T14:38:36.278412+00:00"
     },
     "2c216d2a72b4ae542d49696742a5c4ac": {
       "decision": "REJECT",
@@ -23772,7 +23096,7 @@
         "source_reliability:minimum authoritative reliability=0.000",
         "overall_confidence:noncompensatory weighted confidence=0.000"
       ],
-      "last_seen": "2026-10-28T07:48:44.831156+00:00"
+      "last_seen": "2026-10-28T14:38:37.755104+00:00"
     },
     "a58c16b7c6b248f4a9cf2bc2e4dc751f": {
       "decision": "REJECT",
@@ -23826,7 +23150,7 @@
         "source_reliability:minimum authoritative reliability=0.000",
         "overall_confidence:noncompensatory weighted confidence=0.000"
       ],
-      "last_seen": "2026-10-28T07:48:46.300802+00:00"
+      "last_seen": "2026-10-28T14:38:41.131187+00:00"
     },
     "bf90076dd79c712ef32ae15a3962960c": {
       "decision": "REJECT",
@@ -23862,7 +23186,7 @@
         "mandatory_facts:missing=['subject_id', 'subject_name', 'club_from_id', 'club_from_name', 'club_to_id', 'club_to_name']; unsupported=[]",
         "temporal_consistency:awaiting authoritative timestamp"
       ],
-      "last_seen": "2026-10-28T07:48:30.934622+00:00"
+      "last_seen": "2026-10-28T14:38:12.701924+00:00"
     },
     "5f13316d49abe04815e8aa793d31045e": {
       "decision": "REJECT",
@@ -23880,7 +23204,7 @@
         "source_reliability:minimum authoritative reliability=0.000",
         "overall_confidence:noncompensatory weighted confidence=0.000"
       ],
-      "last_seen": "2026-10-28T07:48:31.721371+00:00"
+      "last_seen": "2026-10-28T14:38:14.813918+00:00"
     },
     "2e85846b1088e960b58969ab9c35ea03": {
       "decision": "REJECT",
@@ -23898,7 +23222,7 @@
         "source_reliability:minimum authoritative reliability=0.000",
         "overall_confidence:noncompensatory weighted confidence=0.000"
       ],
-      "last_seen": "2026-10-28T07:48:31.994029+00:00"
+      "last_seen": "2026-10-28T14:38:15.149167+00:00"
     },
     "52a34483486e6b5990cc6aa77f4b4292": {
       "decision": "REJECT",
@@ -23916,25 +23240,7 @@
         "source_reliability:minimum authoritative reliability=0.000",
         "overall_confidence:noncompensatory weighted confidence=0.000"
       ],
-      "last_seen": "2026-10-28T07:48:32.299815+00:00"
-    },
-    "b417a20b519130ad8d89660aa76f4c86": {
-      "decision": "REJECT",
-      "event": "UNKNOWN",
-      "status": "UNKNOWN",
-      "reasons": [
-        "event_classification:conflicting or missing event classifications",
-        "entity_validation:mandatory person/club identity or relationship is unresolved",
-        "sport_validation:football was not positively established",
-        "league_validation:no active Premier League relationship",
-        "source_provenance:no verified authoritative source yet",
-        "source_url:authoritative source URL missing",
-        "event_status:status=UNKNOWN; publishable=False",
-        "official_confirmation:media/journalist evidence remains pending",
-        "mandatory_facts:missing=[]; unsupported=[]",
-        "temporal_consistency:awaiting authoritative timestamp"
-      ],
-      "last_seen": "2026-10-26T13:45:59.105902+00:00"
+      "last_seen": "2026-10-28T14:38:15.601621+00:00"
     },
     "cbd7b387cf34d63561e40f6ca451a81e": {
       "decision": "REJECT",
@@ -23952,7 +23258,7 @@
         "source_reliability:minimum authoritative reliability=0.000",
         "overall_confidence:noncompensatory weighted confidence=0.000"
       ],
-      "last_seen": "2026-10-28T07:48:40.364632+00:00"
+      "last_seen": "2026-10-28T14:38:27.305683+00:00"
     },
     "4ad9530b8099241c8ea1771fc7678bd5": {
       "decision": "REJECT",
@@ -23970,7 +23276,7 @@
         "mandatory_facts:missing=[]; unsupported=[]",
         "temporal_consistency:awaiting authoritative timestamp"
       ],
-      "last_seen": "2026-10-28T07:48:40.415835+00:00"
+      "last_seen": "2026-10-28T14:38:27.419548+00:00"
     },
     "7a78e01d4ba0e53417cc5903809ec6f9": {
       "decision": "REJECT",
@@ -24006,7 +23312,7 @@
         "temporal_consistency:awaiting authoritative timestamp",
         "source_reliability:minimum authoritative reliability=0.000"
       ],
-      "last_seen": "2026-10-28T07:48:44.470532+00:00"
+      "last_seen": "2026-10-28T14:38:36.597180+00:00"
     },
     "1a6a1d28ebee9f544d04c9bec14f585a": {
       "decision": "REJECT",
@@ -24060,7 +23366,7 @@
         "source_reliability:minimum authoritative reliability=0.000",
         "overall_confidence:noncompensatory weighted confidence=0.000"
       ],
-      "last_seen": "2026-10-28T07:48:30.878475+00:00"
+      "last_seen": "2026-10-28T14:38:12.353020+00:00"
     },
     "73cf2cb02a926426300313c28cc5d1aa": {
       "decision": "REJECT",
@@ -24078,7 +23384,7 @@
         "mandatory_facts:missing=[]; unsupported=[]",
         "temporal_consistency:awaiting authoritative timestamp"
       ],
-      "last_seen": "2026-10-28T07:48:31.665595+00:00"
+      "last_seen": "2026-10-28T14:38:14.750392+00:00"
     },
     "a0f39fa8858417d1465a2500ed475e8f": {
       "decision": "REJECT",
@@ -24116,24 +23422,6 @@
       ],
       "last_seen": "2026-10-26T19:39:08.551752+00:00"
     },
-    "27ca1ffbea5643bd630a771a02181974": {
-      "decision": "REJECT",
-      "event": "UNKNOWN",
-      "status": "UNKNOWN",
-      "reasons": [
-        "event_classification:conflicting or missing event classifications",
-        "entity_validation:mandatory person/club identity or relationship is unresolved",
-        "sport_validation:football was not positively established",
-        "league_validation:no active Premier League relationship",
-        "source_provenance:no verified authoritative source yet",
-        "source_url:authoritative source URL missing",
-        "event_status:status=UNKNOWN; publishable=False",
-        "official_confirmation:media/journalist evidence remains pending",
-        "mandatory_facts:missing=[]; unsupported=[]",
-        "temporal_consistency:awaiting authoritative timestamp"
-      ],
-      "last_seen": "2026-10-26T13:46:01.418753+00:00"
-    },
     "36fed4fb8086d0ffc1f1a95d970e4f03": {
       "decision": "REJECT",
       "event": "UNKNOWN",
@@ -24170,24 +23458,6 @@
       ],
       "last_seen": "2026-10-27T13:43:22.320486+00:00"
     },
-    "3e0d1c08de2d85c46c0d77f662299f44": {
-      "decision": "REJECT",
-      "event": "UNKNOWN",
-      "status": "UNKNOWN",
-      "reasons": [
-        "event_classification:conflicting or missing event classifications",
-        "entity_validation:mandatory person/club identity or relationship is unresolved",
-        "source_provenance:no verified authoritative source yet",
-        "source_url:authoritative source URL missing",
-        "event_status:status=UNKNOWN; publishable=False",
-        "official_confirmation:media/journalist evidence remains pending",
-        "mandatory_facts:missing=[]; unsupported=[]",
-        "temporal_consistency:awaiting authoritative timestamp",
-        "source_reliability:minimum authoritative reliability=0.000",
-        "overall_confidence:noncompensatory weighted confidence=0.000"
-      ],
-      "last_seen": "2026-10-26T13:45:59.416333+00:00"
-    },
     "84b6a791b588e2c8e7cfadd072e22f6e": {
       "decision": "REJECT",
       "event": "UNKNOWN",
@@ -24205,24 +23475,6 @@
         "temporal_consistency:awaiting authoritative timestamp"
       ],
       "last_seen": "2026-10-26T19:39:08.282145+00:00"
-    },
-    "bc596f29cbba909b960d44b1d113884c": {
-      "decision": "REJECT",
-      "event": "UNKNOWN",
-      "status": "UNKNOWN",
-      "reasons": [
-        "event_classification:conflicting or missing event classifications",
-        "entity_validation:mandatory person/club identity or relationship is unresolved",
-        "league_validation:no active Premier League relationship",
-        "source_provenance:no verified authoritative source yet",
-        "source_url:authoritative source URL missing",
-        "event_status:status=UNKNOWN; publishable=False",
-        "official_confirmation:media/journalist evidence remains pending",
-        "mandatory_facts:missing=[]; unsupported=[]",
-        "temporal_consistency:awaiting authoritative timestamp",
-        "source_reliability:minimum authoritative reliability=0.000"
-      ],
-      "last_seen": "2026-10-26T13:45:53.356630+00:00"
     },
     "12e8d0dab325016c8ed4e8dfe042ca00": {
       "decision": "REJECT",
@@ -24242,24 +23494,6 @@
       ],
       "last_seen": "2026-10-26T19:39:05.719866+00:00"
     },
-    "ea560caace4a0cb4cef9a61aaff57356": {
-      "decision": "REJECT",
-      "event": "UNKNOWN",
-      "status": "UNKNOWN",
-      "reasons": [
-        "event_classification:conflicting or missing event classifications",
-        "entity_validation:mandatory person/club identity or relationship is unresolved",
-        "sport_validation:football was not positively established",
-        "league_validation:no active Premier League relationship",
-        "source_provenance:no verified authoritative source yet",
-        "source_url:authoritative source URL missing",
-        "event_status:status=UNKNOWN; publishable=False",
-        "official_confirmation:media/journalist evidence remains pending",
-        "mandatory_facts:missing=[]; unsupported=[]",
-        "temporal_consistency:awaiting authoritative timestamp"
-      ],
-      "last_seen": "2026-10-26T13:45:58.902266+00:00"
-    },
     "451a90183fae0d9ee7734bd11b62b35a": {
       "decision": "REJECT",
       "event": "UNKNOWN",
@@ -24277,42 +23511,6 @@
         "temporal_consistency:awaiting authoritative timestamp"
       ],
       "last_seen": "2026-10-26T23:19:49.662948+00:00"
-    },
-    "9f1188c92ea51516dfc8de843288208f": {
-      "decision": "REJECT",
-      "event": "UNKNOWN",
-      "status": "UNKNOWN",
-      "reasons": [
-        "event_classification:conflicting or missing event classifications",
-        "entity_validation:mandatory person/club identity or relationship is unresolved",
-        "sport_validation:football was not positively established",
-        "league_validation:no active Premier League relationship",
-        "source_provenance:no verified authoritative source yet",
-        "source_url:authoritative source URL missing",
-        "event_status:status=UNKNOWN; publishable=False",
-        "official_confirmation:media/journalist evidence remains pending",
-        "mandatory_facts:missing=[]; unsupported=[]",
-        "temporal_consistency:awaiting authoritative timestamp"
-      ],
-      "last_seen": "2026-10-26T13:46:01.740912+00:00"
-    },
-    "56d8989ee5f9f731690e869852f7a41f": {
-      "decision": "REJECT",
-      "event": "UNKNOWN",
-      "status": "UNKNOWN",
-      "reasons": [
-        "event_classification:conflicting or missing event classifications",
-        "entity_validation:mandatory person/club identity or relationship is unresolved",
-        "source_provenance:no verified authoritative source yet",
-        "source_url:authoritative source URL missing",
-        "event_status:status=UNKNOWN; publishable=False",
-        "official_confirmation:media/journalist evidence remains pending",
-        "mandatory_facts:missing=[]; unsupported=[]",
-        "temporal_consistency:awaiting authoritative timestamp",
-        "source_reliability:minimum authoritative reliability=0.000",
-        "overall_confidence:noncompensatory weighted confidence=0.000"
-      ],
-      "last_seen": "2026-10-26T06:57:32.119393+00:00"
     },
     "7803747d43aee0348d88daeea18ca09e": {
       "decision": "REJECT",
@@ -24348,7 +23546,7 @@
         "source_reliability:minimum authoritative reliability=0.000",
         "overall_confidence:noncompensatory weighted confidence=0.000"
       ],
-      "last_seen": "2026-10-28T07:48:31.392275+00:00"
+      "last_seen": "2026-10-28T14:38:14.037810+00:00"
     },
     "8ca94803d41642ea3940d079d9f2d467": {
       "decision": "REJECT",
@@ -24403,42 +23601,6 @@
         "temporal_consistency:awaiting authoritative timestamp"
       ],
       "last_seen": "2026-10-27T02:09:28.628268+00:00"
-    },
-    "6fb318d5d60986f8fdba342c0d96c0b6": {
-      "decision": "REJECT",
-      "event": "UNKNOWN",
-      "status": "UNKNOWN",
-      "reasons": [
-        "event_classification:conflicting or missing event classifications",
-        "entity_validation:mandatory person/club identity or relationship is unresolved",
-        "sport_validation:football was not positively established",
-        "league_validation:no active Premier League relationship",
-        "source_provenance:no verified authoritative source yet",
-        "source_url:authoritative source URL missing",
-        "event_status:status=UNKNOWN; publishable=False",
-        "official_confirmation:media/journalist evidence remains pending",
-        "mandatory_facts:missing=[]; unsupported=[]",
-        "temporal_consistency:awaiting authoritative timestamp"
-      ],
-      "last_seen": "2026-10-26T13:45:59.208854+00:00"
-    },
-    "60d60aeb702f45913a6f14f20c33d956": {
-      "decision": "REJECT",
-      "event": "UNKNOWN",
-      "status": "UNKNOWN",
-      "reasons": [
-        "event_classification:conflicting or missing event classifications",
-        "entity_validation:mandatory person/club identity or relationship is unresolved",
-        "sport_validation:football was not positively established",
-        "league_validation:no active Premier League relationship",
-        "source_provenance:no verified authoritative source yet",
-        "source_url:authoritative source URL missing",
-        "event_status:status=UNKNOWN; publishable=False",
-        "official_confirmation:media/journalist evidence remains pending",
-        "mandatory_facts:missing=[]; unsupported=[]",
-        "temporal_consistency:awaiting authoritative timestamp"
-      ],
-      "last_seen": "2026-10-26T13:45:59.310266+00:00"
     },
     "4d59392492b9c725aa41f4b145385300": {
       "decision": "REJECT",
@@ -24555,16 +23717,16 @@
       "reasons": [
         "event_classification:conflicting or missing event classifications",
         "entity_validation:mandatory person/club identity or relationship is unresolved",
-        "sport_validation:football was not positively established",
         "source_provenance:no verified authoritative source yet",
         "source_url:authoritative source URL missing",
         "event_status:status=UNKNOWN; publishable=False",
         "official_confirmation:media/journalist evidence remains pending",
         "mandatory_facts:missing=[]; unsupported=[]",
         "temporal_consistency:awaiting authoritative timestamp",
-        "source_reliability:minimum authoritative reliability=0.000"
+        "source_reliability:minimum authoritative reliability=0.000",
+        "overall_confidence:noncompensatory weighted confidence=0.000"
       ],
-      "last_seen": "2026-10-26T19:39:08.372199+00:00"
+      "last_seen": "2026-10-28T14:38:17.567688+00:00"
     },
     "7fb0202c5075f40e5696248ee7cc8776": {
       "decision": "REJECT",
@@ -24583,60 +23745,6 @@
         "temporal_consistency:awaiting authoritative timestamp"
       ],
       "last_seen": "2026-10-26T19:39:08.460498+00:00"
-    },
-    "a2dafbd9a9b8bb1bbf093a14610b9372": {
-      "decision": "REJECT",
-      "event": "UNKNOWN",
-      "status": "UNKNOWN",
-      "reasons": [
-        "event_classification:conflicting or missing event classifications",
-        "entity_validation:mandatory person/club identity or relationship is unresolved",
-        "sport_validation:football was not positively established",
-        "source_provenance:no verified authoritative source yet",
-        "source_url:authoritative source URL missing",
-        "event_status:status=UNKNOWN; publishable=False",
-        "official_confirmation:media/journalist evidence remains pending",
-        "mandatory_facts:missing=[]; unsupported=[]",
-        "temporal_consistency:awaiting authoritative timestamp",
-        "source_reliability:minimum authoritative reliability=0.000"
-      ],
-      "last_seen": "2026-10-26T13:46:01.311908+00:00"
-    },
-    "a226d48bba2919dd3dce6ea7a8358316": {
-      "decision": "REJECT",
-      "event": "UNKNOWN",
-      "status": "UNKNOWN",
-      "reasons": [
-        "event_classification:conflicting or missing event classifications",
-        "entity_validation:mandatory person/club identity or relationship is unresolved",
-        "sport_validation:football was not positively established",
-        "league_validation:no active Premier League relationship",
-        "source_provenance:no verified authoritative source yet",
-        "source_url:authoritative source URL missing",
-        "event_status:status=UNKNOWN; publishable=False",
-        "official_confirmation:media/journalist evidence remains pending",
-        "mandatory_facts:missing=[]; unsupported=[]",
-        "temporal_consistency:awaiting authoritative timestamp"
-      ],
-      "last_seen": "2026-10-26T13:46:01.525814+00:00"
-    },
-    "48165548e6a7f8f60974d93245c1d274": {
-      "decision": "REJECT",
-      "event": "UNKNOWN",
-      "status": "UNKNOWN",
-      "reasons": [
-        "event_classification:conflicting or missing event classifications",
-        "entity_validation:mandatory person/club identity or relationship is unresolved",
-        "sport_validation:football was not positively established",
-        "source_provenance:no verified authoritative source yet",
-        "source_url:authoritative source URL missing",
-        "event_status:status=UNKNOWN; publishable=False",
-        "official_confirmation:media/journalist evidence remains pending",
-        "mandatory_facts:missing=[]; unsupported=[]",
-        "temporal_consistency:awaiting authoritative timestamp",
-        "source_reliability:minimum authoritative reliability=0.000"
-      ],
-      "last_seen": "2026-10-26T13:46:01.632794+00:00"
     },
     "bd68fed7e62126a320fbc656401d8076": {
       "decision": "REJECT",
@@ -24691,24 +23799,6 @@
       ],
       "last_seen": "2026-10-27T22:59:03.782084+00:00"
     },
-    "08dce0c9f3eaf68d769a2d5fc2051bb2": {
-      "decision": "REJECT",
-      "event": "UNKNOWN",
-      "status": "UNKNOWN",
-      "reasons": [
-        "event_classification:conflicting or missing event classifications",
-        "entity_validation:mandatory person/club identity or relationship is unresolved",
-        "league_validation:no active Premier League relationship",
-        "source_provenance:no verified authoritative source yet",
-        "source_url:authoritative source URL missing",
-        "event_status:status=UNKNOWN; publishable=False",
-        "official_confirmation:media/journalist evidence remains pending",
-        "mandatory_facts:missing=[]; unsupported=[]",
-        "temporal_consistency:awaiting authoritative timestamp",
-        "source_reliability:minimum authoritative reliability=0.000"
-      ],
-      "last_seen": "2026-10-26T13:46:02.834110+00:00"
-    },
     "187cd80c225121497390cc29aedaad77": {
       "decision": "REJECT",
       "event": "UNKNOWN",
@@ -24725,7 +23815,7 @@
         "temporal_consistency:awaiting authoritative timestamp",
         "source_reliability:minimum authoritative reliability=0.000"
       ],
-      "last_seen": "2026-10-28T07:48:36.322707+00:00"
+      "last_seen": "2026-10-28T14:38:20.857292+00:00"
     },
     "1cd7177002963708be97e6d31b6133ee": {
       "decision": "REJECT",
@@ -24743,7 +23833,7 @@
         "source_reliability:minimum authoritative reliability=0.000",
         "overall_confidence:noncompensatory weighted confidence=0.000"
       ],
-      "last_seen": "2026-10-28T07:48:36.437963+00:00"
+      "last_seen": "2026-10-28T14:38:21.001413+00:00"
     },
     "a30990cb3833af1e52646177720cdd5a": {
       "decision": "REJECT",
@@ -24761,7 +23851,7 @@
         "source_reliability:minimum authoritative reliability=0.000",
         "overall_confidence:noncompensatory weighted confidence=0.000"
       ],
-      "last_seen": "2026-10-28T07:48:36.506128+00:00"
+      "last_seen": "2026-10-28T14:38:21.093980+00:00"
     },
     "5671b7e0aa82d7a24f75891bc1ca134b": {
       "decision": "REJECT",
@@ -24779,7 +23869,7 @@
         "mandatory_facts:missing=[]; unsupported=[]",
         "temporal_consistency:awaiting authoritative timestamp"
       ],
-      "last_seen": "2026-10-28T07:48:38.707042+00:00"
+      "last_seen": "2026-10-28T14:38:24.205762+00:00"
     },
     "c7fd8ec11da01f2a41d491a4c2be32f5": {
       "decision": "REJECT",
@@ -24797,7 +23887,7 @@
         "source_reliability:minimum authoritative reliability=0.000",
         "overall_confidence:noncompensatory weighted confidence=0.000"
       ],
-      "last_seen": "2026-10-28T07:48:38.763178+00:00"
+      "last_seen": "2026-10-28T14:38:24.298114+00:00"
     },
     "eb128584eb42eca63709152f6f452af2": {
       "decision": "REJECT",
@@ -24833,7 +23923,7 @@
         "mandatory_facts:missing=[]; unsupported=[]",
         "temporal_consistency:awaiting authoritative timestamp"
       ],
-      "last_seen": "2026-10-28T07:48:38.862670+00:00"
+      "last_seen": "2026-10-28T14:38:24.590044+00:00"
     },
     "ec1ecee6b302f32904a34a5e4cd10346": {
       "decision": "REJECT",
@@ -24851,7 +23941,7 @@
         "source_reliability:minimum authoritative reliability=0.000",
         "overall_confidence:noncompensatory weighted confidence=0.000"
       ],
-      "last_seen": "2026-10-28T07:48:39.770279+00:00"
+      "last_seen": "2026-10-28T14:38:25.881709+00:00"
     },
     "62176fe81930573fc1f61d4bad6575d6": {
       "decision": "REJECT",
@@ -24869,7 +23959,7 @@
         "source_reliability:minimum authoritative reliability=0.000",
         "overall_confidence:noncompensatory weighted confidence=0.000"
       ],
-      "last_seen": "2026-10-28T07:48:39.820331+00:00"
+      "last_seen": "2026-10-28T14:38:25.944086+00:00"
     },
     "031a2b38adadfd703a326588b3a5a82e": {
       "decision": "REJECT",
@@ -24887,7 +23977,7 @@
         "temporal_consistency:awaiting authoritative timestamp",
         "source_reliability:minimum authoritative reliability=0.000"
       ],
-      "last_seen": "2026-10-28T07:48:39.871700+00:00"
+      "last_seen": "2026-10-28T14:38:26.024845+00:00"
     },
     "1493989ec0806289d09a430ba28e142d": {
       "decision": "REJECT",
@@ -24923,7 +24013,7 @@
         "source_reliability:minimum authoritative reliability=0.000",
         "overall_confidence:noncompensatory weighted confidence=0.000"
       ],
-      "last_seen": "2026-10-28T07:48:41.302077+00:00"
+      "last_seen": "2026-10-28T14:38:28.805117+00:00"
     },
     "108a776b499cf0bffd7ee1033d3cdc28": {
       "decision": "REJECT",
@@ -25022,10 +24112,10 @@
       "reasons": [
         "entity_validation:mandatory person/club identity or relationship is unresolved",
         "mandatory_facts:missing=['subject_id', 'subject_name']; unsupported=[]",
-        "temporal_consistency:official confirmation is 233.6h old",
+        "temporal_consistency:official confirmation is 240.4h old",
         "overall_confidence:noncompensatory weighted confidence=0.000"
       ],
-      "last_seen": "2026-10-28T07:48:42.831632+00:00"
+      "last_seen": "2026-10-28T14:38:32.934252+00:00"
     },
     "eaef852fdac516e133aaca367c714af8": {
       "decision": "REJECT",
@@ -25043,7 +24133,7 @@
         "mandatory_facts:missing=[]; unsupported=[]",
         "temporal_consistency:awaiting authoritative timestamp"
       ],
-      "last_seen": "2026-10-28T07:48:44.107538+00:00"
+      "last_seen": "2026-10-28T14:38:35.828970+00:00"
     },
     "c85254b4c6698c1f10b697087af9a67c": {
       "decision": "REJECT",
@@ -25061,7 +24151,7 @@
         "mandatory_facts:missing=[]; unsupported=[]",
         "temporal_consistency:awaiting authoritative timestamp"
       ],
-      "last_seen": "2026-10-28T07:48:44.158689+00:00"
+      "last_seen": "2026-10-28T14:38:36.055081+00:00"
     },
     "be11dc1c0773d11efac6f13d4f5a759d": {
       "decision": "REJECT",
@@ -25079,7 +24169,7 @@
         "mandatory_facts:missing=[]; unsupported=[]",
         "temporal_consistency:awaiting authoritative timestamp"
       ],
-      "last_seen": "2026-10-28T07:48:44.213881+00:00"
+      "last_seen": "2026-10-28T14:38:36.120386+00:00"
     },
     "d592777cd9209640800a5bf3ed2f1522": {
       "decision": "REJECT",
@@ -25097,7 +24187,7 @@
         "source_reliability:minimum authoritative reliability=0.000",
         "overall_confidence:noncompensatory weighted confidence=0.000"
       ],
-      "last_seen": "2026-10-27T13:43:33.752979+00:00"
+      "last_seen": "2026-10-28T14:38:38.949154+00:00"
     },
     "e57259f8b9ed216789b3a4249062b329": {
       "decision": "REJECT",
@@ -25143,7 +24233,7 @@
         "source_reliability:minimum authoritative reliability=0.000",
         "overall_confidence:noncompensatory weighted confidence=0.000"
       ],
-      "last_seen": "2026-10-28T07:48:45.429046+00:00"
+      "last_seen": "2026-10-28T14:38:39.850768+00:00"
     },
     "df0ea26395166bad18f700dc865f24d0": {
       "decision": "REJECT",
@@ -25179,7 +24269,7 @@
         "temporal_consistency:awaiting authoritative timestamp",
         "source_reliability:minimum authoritative reliability=0.000"
       ],
-      "last_seen": "2026-10-28T07:48:30.011402+00:00"
+      "last_seen": "2026-10-28T14:38:11.115531+00:00"
     },
     "e894ff59fb9a3b4bb2ab21d97fc965de": {
       "decision": "REJECT",
@@ -25197,7 +24287,7 @@
         "temporal_consistency:awaiting authoritative timestamp",
         "source_reliability:minimum authoritative reliability=0.000"
       ],
-      "last_seen": "2026-10-28T07:48:30.688036+00:00"
+      "last_seen": "2026-10-28T14:38:12.290454+00:00"
     },
     "1674fa8e36861131b3462788e7f15307": {
       "decision": "REJECT",
@@ -25215,7 +24305,7 @@
         "mandatory_facts:missing=[]; unsupported=[]",
         "temporal_consistency:awaiting authoritative timestamp"
       ],
-      "last_seen": "2026-10-28T07:48:31.272065+00:00"
+      "last_seen": "2026-10-28T14:38:13.863885+00:00"
     },
     "b6d70772f5f09ebcced05c5f59ed9b34": {
       "decision": "REJECT",
@@ -25233,7 +24323,7 @@
         "source_reliability:minimum authoritative reliability=0.000",
         "overall_confidence:noncompensatory weighted confidence=0.000"
       ],
-      "last_seen": "2026-10-28T07:48:35.487535+00:00"
+      "last_seen": "2026-10-28T14:38:40.174491+00:00"
     },
     "e2798823ea56c16902efa296ce2ba7e6": {
       "decision": "REJECT",
@@ -25251,7 +24341,7 @@
         "source_reliability:minimum authoritative reliability=0.000",
         "overall_confidence:noncompensatory weighted confidence=0.000"
       ],
-      "last_seen": "2026-10-28T07:48:31.509212+00:00"
+      "last_seen": "2026-10-28T14:38:14.472302+00:00"
     },
     "b0796a35e4a2e755e218b6a062e86266": {
       "decision": "REJECT",
@@ -25269,7 +24359,7 @@
         "source_reliability:minimum authoritative reliability=0.000",
         "overall_confidence:noncompensatory weighted confidence=0.000"
       ],
-      "last_seen": "2026-10-28T07:48:31.934110+00:00"
+      "last_seen": "2026-10-28T14:38:15.011861+00:00"
     },
     "cc1dff10c0f13934c2f5530ded6cbcd1": {
       "decision": "REJECT",
@@ -25518,7 +24608,7 @@
         "source_reliability:minimum authoritative reliability=0.000",
         "overall_confidence:noncompensatory weighted confidence=0.000"
       ],
-      "last_seen": "2026-10-28T07:48:35.746921+00:00"
+      "last_seen": "2026-10-28T14:38:20.097675+00:00"
     },
     "2e7142291cbc0e5b08abc460e81d14d9": {
       "decision": "REJECT",
@@ -25529,7 +24619,7 @@
         "mandatory_facts:missing=['subject_id', 'subject_name']; unsupported=[]",
         "overall_confidence:noncompensatory weighted confidence=0.000"
       ],
-      "last_seen": "2026-10-28T07:48:37.074270+00:00"
+      "last_seen": "2026-10-28T14:38:22.056608+00:00"
     },
     "218fe621a65e5fca9a60096cf3b1fb4b": {
       "decision": "REJECT",
@@ -25547,7 +24637,7 @@
         "source_reliability:minimum authoritative reliability=0.000",
         "overall_confidence:noncompensatory weighted confidence=0.000"
       ],
-      "last_seen": "2026-10-28T07:48:37.205342+00:00"
+      "last_seen": "2026-10-28T14:38:22.245613+00:00"
     },
     "02dc832a96455ee804bbdb0bd1fafcaa": {
       "decision": "REJECT",
@@ -25565,7 +24655,7 @@
         "source_reliability:minimum authoritative reliability=0.000",
         "overall_confidence:noncompensatory weighted confidence=0.000"
       ],
-      "last_seen": "2026-10-28T07:48:38.141018+00:00"
+      "last_seen": "2026-10-28T14:38:23.359856+00:00"
     },
     "3bab5b731c1fc5049f7249a04c916bb1": {
       "decision": "REJECT",
@@ -25583,7 +24673,7 @@
         "mandatory_facts:missing=[]; unsupported=[]",
         "temporal_consistency:awaiting authoritative timestamp"
       ],
-      "last_seen": "2026-10-28T07:48:38.607132+00:00"
+      "last_seen": "2026-10-28T14:38:24.075915+00:00"
     },
     "bc2f43e9d52f12867e451e6d300e763b": {
       "decision": "REJECT",
@@ -25601,7 +24691,7 @@
         "temporal_consistency:awaiting authoritative timestamp",
         "source_reliability:minimum authoritative reliability=0.000"
       ],
-      "last_seen": "2026-10-28T07:48:38.656988+00:00"
+      "last_seen": "2026-10-28T14:38:24.133303+00:00"
     },
     "27ee56f60f0e392644ee661bf521ca01": {
       "decision": "REJECT",
@@ -25619,7 +24709,7 @@
         "official_confirmation:media/journalist evidence remains pending",
         "mandatory_facts:missing=[]; unsupported=[]"
       ],
-      "last_seen": "2026-10-28T07:48:38.911843+00:00"
+      "last_seen": "2026-10-28T14:38:24.647099+00:00"
     },
     "05b40fb9602d7bb69ff8e7fa15253a2e": {
       "decision": "REJECT",
@@ -25637,7 +24727,7 @@
         "source_reliability:minimum authoritative reliability=0.000",
         "overall_confidence:noncompensatory weighted confidence=0.000"
       ],
-      "last_seen": "2026-10-28T07:48:39.716308+00:00"
+      "last_seen": "2026-10-28T14:38:25.777911+00:00"
     },
     "d36f3b6a3579d9ac22fa62a583c57ccd": {
       "decision": "REJECT",
@@ -25655,7 +24745,7 @@
         "source_reliability:minimum authoritative reliability=0.000",
         "overall_confidence:noncompensatory weighted confidence=0.000"
       ],
-      "last_seen": "2026-10-28T07:48:40.307460+00:00"
+      "last_seen": "2026-10-28T14:38:27.224597+00:00"
     },
     "2ef55bf1f32fd83b6d7817a458bf0b96": {
       "decision": "REJECT",
@@ -25673,7 +24763,7 @@
         "source_reliability:minimum authoritative reliability=0.000",
         "overall_confidence:noncompensatory weighted confidence=0.000"
       ],
-      "last_seen": "2026-10-28T07:48:41.119807+00:00"
+      "last_seen": "2026-10-28T14:38:28.569676+00:00"
     },
     "6d977ce84bbeeac2359c91d4ce92cee9": {
       "decision": "REJECT",
@@ -25690,7 +24780,7 @@
         "source_reliability:minimum authoritative reliability=0.000",
         "overall_confidence:noncompensatory weighted confidence=0.000"
       ],
-      "last_seen": "2026-10-28T07:48:41.190474+00:00"
+      "last_seen": "2026-10-28T14:38:28.662857+00:00"
     },
     "4262f7344ba4e374a60c25c0ed63cd5e": {
       "decision": "REJECT",
@@ -25708,7 +24798,7 @@
         "source_reliability:minimum authoritative reliability=0.000",
         "overall_confidence:noncompensatory weighted confidence=0.000"
       ],
-      "last_seen": "2026-10-28T07:48:41.238830+00:00"
+      "last_seen": "2026-10-28T14:38:28.721262+00:00"
     },
     "bcba249488d1a9bfd4817ec9b79bf335": {
       "decision": "REJECT",
@@ -25744,7 +24834,7 @@
         "mandatory_facts:missing=[]; unsupported=[]",
         "temporal_consistency:awaiting authoritative timestamp"
       ],
-      "last_seen": "2026-10-28T07:48:42.227211+00:00"
+      "last_seen": "2026-10-28T14:38:31.780010+00:00"
     },
     "4e7b2b03226fd5511a87f508ba6912b7": {
       "decision": "REJECT",
@@ -25834,7 +24924,7 @@
         "mandatory_facts:missing=[]; unsupported=[]",
         "temporal_consistency:awaiting authoritative timestamp"
       ],
-      "last_seen": "2026-10-28T07:48:42.678299+00:00"
+      "last_seen": "2026-10-28T14:38:32.677615+00:00"
     },
     "28a49b56864ab405d6abd0e924c75f88": {
       "decision": "REJECT",
@@ -25852,7 +24942,7 @@
         "mandatory_facts:missing=[]; unsupported=[]",
         "temporal_consistency:awaiting authoritative timestamp"
       ],
-      "last_seen": "2026-10-28T07:48:42.742998+00:00"
+      "last_seen": "2026-10-28T14:38:32.802671+00:00"
     },
     "125a227e9d3404c3ad4fdf2940b3cd17": {
       "decision": "REJECT",
@@ -25870,7 +24960,7 @@
         "source_reliability:minimum authoritative reliability=0.000",
         "overall_confidence:noncompensatory weighted confidence=0.000"
       ],
-      "last_seen": "2026-10-28T07:48:43.632221+00:00"
+      "last_seen": "2026-10-28T14:38:34.583272+00:00"
     },
     "5ad537cfd8071ca0d19215427636c2ad": {
       "decision": "REJECT",
@@ -25887,7 +24977,7 @@
         "source_reliability:minimum authoritative reliability=0.000",
         "overall_confidence:noncompensatory weighted confidence=0.000"
       ],
-      "last_seen": "2026-10-28T07:48:43.722294+00:00"
+      "last_seen": "2026-10-28T14:38:34.785727+00:00"
     },
     "989936d68d3d4c33ad4f03ffec8ad697": {
       "decision": "PENDING",
@@ -25921,7 +25011,7 @@
         "mandatory_facts:missing=[]; unsupported=[]",
         "temporal_consistency:awaiting authoritative timestamp"
       ],
-      "last_seen": "2026-10-28T07:48:44.053599+00:00"
+      "last_seen": "2026-10-28T14:38:35.643473+00:00"
     },
     "fa373fbb052b1e191fe9bf5f63eb1cad": {
       "decision": "REJECT",
@@ -25939,7 +25029,7 @@
         "source_reliability:minimum authoritative reliability=0.000",
         "overall_confidence:noncompensatory weighted confidence=0.000"
       ],
-      "last_seen": "2026-10-28T07:48:44.626488+00:00"
+      "last_seen": "2026-10-28T14:38:37.255772+00:00"
     },
     "18df38715baf16e40dc834586d627f42": {
       "decision": "REJECT",
@@ -25957,7 +25047,7 @@
         "source_reliability:minimum authoritative reliability=0.000",
         "overall_confidence:noncompensatory weighted confidence=0.000"
       ],
-      "last_seen": "2026-10-28T07:48:44.984189+00:00"
+      "last_seen": "2026-10-28T14:38:38.694342+00:00"
     },
     "96827415f3a5fa32457c3a4eb227ce4f": {
       "decision": "REJECT",
@@ -26011,7 +25101,7 @@
         "source_reliability:minimum authoritative reliability=0.000",
         "overall_confidence:noncompensatory weighted confidence=0.000"
       ],
-      "last_seen": "2026-10-28T07:48:45.588933+00:00"
+      "last_seen": "2026-10-28T14:38:40.107829+00:00"
     },
     "dc5a48a622e6741958b0ff10af4f5e2b": {
       "decision": "REJECT",
@@ -26145,17 +25235,17 @@
       "status": "UNKNOWN",
       "reasons": [
         "event_classification:conflicting or missing event classifications",
+        "article_category:rumour/opinion/analysis/preview/recap/interview/feature/editorial or unknown",
         "entity_validation:mandatory person/club identity or relationship is unresolved",
+        "sport_validation:football was not positively established",
+        "league_validation:no active Premier League relationship",
         "source_provenance:no verified authoritative source yet",
         "source_url:authoritative source URL missing",
         "event_status:status=UNKNOWN; publishable=False",
         "official_confirmation:media/journalist evidence remains pending",
-        "mandatory_facts:missing=[]; unsupported=[]",
-        "temporal_consistency:awaiting authoritative timestamp",
-        "source_reliability:minimum authoritative reliability=0.000",
-        "overall_confidence:noncompensatory weighted confidence=0.000"
+        "mandatory_facts:missing=[]; unsupported=[]"
       ],
-      "last_seen": "2026-10-28T07:48:39.667413+00:00"
+      "last_seen": "2026-10-28T14:38:25.718795+00:00"
     },
     "4480bb0f425e2196fcb4ae06c9589355": {
       "decision": "REJECT",
@@ -26191,7 +25281,7 @@
         "mandatory_facts:missing=[]; unsupported=[]",
         "temporal_consistency:awaiting authoritative timestamp"
       ],
-      "last_seen": "2026-10-28T07:48:40.877933+00:00"
+      "last_seen": "2026-10-28T14:38:28.259918+00:00"
     },
     "0af59033a26218f5707e88a403949e25": {
       "decision": "REJECT",
@@ -26209,7 +25299,7 @@
         "temporal_consistency:awaiting authoritative timestamp",
         "source_reliability:minimum authoritative reliability=0.000"
       ],
-      "last_seen": "2026-10-28T07:48:43.566904+00:00"
+      "last_seen": "2026-10-28T14:38:34.435551+00:00"
     },
     "6bbd5ac661a43d05e7439b12aa0250aa": {
       "decision": "REJECT",
@@ -26227,7 +25317,7 @@
         "source_reliability:minimum authoritative reliability=0.000",
         "overall_confidence:noncompensatory weighted confidence=0.000"
       ],
-      "last_seen": "2026-10-28T07:48:45.216652+00:00"
+      "last_seen": "2026-10-28T14:38:39.551654+00:00"
     },
     "f2125b9145a87cbe3e5736835d6d0aa9": {
       "decision": "REJECT",
@@ -26245,7 +25335,7 @@
         "source_reliability:minimum authoritative reliability=0.000",
         "overall_confidence:noncompensatory weighted confidence=0.000"
       ],
-      "last_seen": "2026-10-28T07:48:46.013577+00:00"
+      "last_seen": "2026-10-28T14:38:40.535959+00:00"
     },
     "3c5bf96a1484044745296fb75e2a55b7": {
       "decision": "REJECT",
@@ -26317,7 +25407,7 @@
         "source_reliability:minimum authoritative reliability=0.000",
         "overall_confidence:noncompensatory weighted confidence=0.000"
       ],
-      "last_seen": "2026-10-28T07:48:37.975673+00:00"
+      "last_seen": "2026-10-28T14:38:23.162296+00:00"
     },
     "d78e031b21b0029bfa4b6ea8d7b9253e": {
       "decision": "REJECT",
@@ -26335,7 +25425,7 @@
         "temporal_consistency:awaiting authoritative timestamp",
         "source_reliability:minimum authoritative reliability=0.000"
       ],
-      "last_seen": "2026-10-28T07:48:38.552058+00:00"
+      "last_seen": "2026-10-28T14:38:24.010418+00:00"
     },
     "8c1587438d96cbf1b09d84d2a5f2ef8c": {
       "decision": "REJECT",
@@ -26371,7 +25461,7 @@
         "temporal_consistency:awaiting authoritative timestamp",
         "source_reliability:minimum authoritative reliability=0.000"
       ],
-      "last_seen": "2026-10-28T07:48:45.490496+00:00"
+      "last_seen": "2026-10-28T14:38:39.924751+00:00"
     },
     "52e731871546ff8fc8cd4b3eeb33d01f": {
       "decision": "REJECT",
@@ -26400,7 +25490,7 @@
         "source_reliability:minimum authoritative reliability=0.000",
         "overall_confidence:noncompensatory weighted confidence=0.000"
       ],
-      "last_seen": "2026-10-28T07:48:31.456169+00:00"
+      "last_seen": "2026-10-28T14:38:15.085856+00:00"
     },
     "947bfdb75c216eca45061915e319c4de": {
       "decision": "REJECT",
@@ -26562,7 +25652,7 @@
         "source_reliability:minimum authoritative reliability=0.000",
         "overall_confidence:noncompensatory weighted confidence=0.000"
       ],
-      "last_seen": "2026-10-28T07:48:37.453495+00:00"
+      "last_seen": "2026-10-28T14:38:22.563857+00:00"
     },
     "32a012c63caac31f573b5cd907786b45": {
       "decision": "REJECT",
@@ -26580,7 +25670,7 @@
         "source_reliability:minimum authoritative reliability=0.000",
         "overall_confidence:noncompensatory weighted confidence=0.000"
       ],
-      "last_seen": "2026-10-28T07:48:38.089279+00:00"
+      "last_seen": "2026-10-28T14:38:23.300013+00:00"
     },
     "b14d42603e91874cc2430c068f10adae": {
       "decision": "REJECT",
@@ -26598,7 +25688,7 @@
         "source_reliability:minimum authoritative reliability=0.000",
         "overall_confidence:noncompensatory weighted confidence=0.000"
       ],
-      "last_seen": "2026-10-28T07:48:38.494727+00:00"
+      "last_seen": "2026-10-28T14:38:23.941410+00:00"
     },
     "23baa4a1fb81c2a5838e47c46de038ee": {
       "decision": "REJECT",
@@ -26616,7 +25706,7 @@
         "source_reliability:minimum authoritative reliability=0.000",
         "overall_confidence:noncompensatory weighted confidence=0.000"
       ],
-      "last_seen": "2026-10-28T07:48:45.812848+00:00"
+      "last_seen": "2026-10-28T14:38:40.238376+00:00"
     },
     "eff8aa46781b472436d80827bd44d1ad": {
       "decision": "PENDING",
@@ -26650,7 +25740,7 @@
         "temporal_consistency:awaiting authoritative timestamp",
         "source_reliability:minimum authoritative reliability=0.000"
       ],
-      "last_seen": "2026-10-28T07:48:31.215799+00:00"
+      "last_seen": "2026-10-28T14:38:13.613041+00:00"
     },
     "0ece7453c1d8bb9a77f908b092c89f5c": {
       "decision": "REJECT",
@@ -26668,7 +25758,7 @@
         "source_reliability:minimum authoritative reliability=0.000",
         "overall_confidence:noncompensatory weighted confidence=0.000"
       ],
-      "last_seen": "2026-10-28T07:48:31.561705+00:00"
+      "last_seen": "2026-10-28T14:38:14.622409+00:00"
     },
     "f4e3eefdab71ec23b37c3d3854ac8419": {
       "decision": "REJECT",
@@ -26848,7 +25938,7 @@
         "source_reliability:minimum authoritative reliability=0.000",
         "overall_confidence:noncompensatory weighted confidence=0.000"
       ],
-      "last_seen": "2026-10-28T07:48:44.928103+00:00"
+      "last_seen": "2026-10-28T14:38:38.255829+00:00"
     },
     "8e5b7a51e6ace368c608d09dcefe4395": {
       "decision": "REJECT",
@@ -26956,7 +26046,7 @@
         "temporal_consistency:awaiting authoritative timestamp",
         "source_reliability:minimum authoritative reliability=0.000"
       ],
-      "last_seen": "2026-10-28T07:48:35.297041+00:00"
+      "last_seen": "2026-10-28T14:38:19.164359+00:00"
     },
     "005b05855a5cd69d6dbaf5fa26ba25be": {
       "decision": "REJECT",
@@ -26974,7 +26064,7 @@
         "temporal_consistency:awaiting authoritative timestamp",
         "source_reliability:minimum authoritative reliability=0.000"
       ],
-      "last_seen": "2026-10-28T07:48:35.360880+00:00"
+      "last_seen": "2026-10-28T14:38:18.923312+00:00"
     },
     "990d6315248f4a7a2d8a91c0edf130bc": {
       "decision": "REJECT",
@@ -27009,7 +26099,7 @@
         "mandatory_facts:missing=[]; unsupported=[]",
         "temporal_consistency:awaiting authoritative timestamp"
       ],
-      "last_seen": "2026-10-28T07:48:35.175390+00:00"
+      "last_seen": "2026-10-28T14:38:19.245611+00:00"
     },
     "b453196b891eb7e1bcc8314742c28ed4": {
       "decision": "REJECT",
@@ -27027,7 +26117,7 @@
         "source_reliability:minimum authoritative reliability=0.000",
         "overall_confidence:noncompensatory weighted confidence=0.000"
       ],
-      "last_seen": "2026-10-28T07:48:35.817527+00:00"
+      "last_seen": "2026-10-28T14:38:20.185804+00:00"
     },
     "c27a19d982782091a87367ce8cb5a528": {
       "decision": "REJECT",
@@ -27045,7 +26135,7 @@
         "source_reliability:minimum authoritative reliability=0.000",
         "overall_confidence:noncompensatory weighted confidence=0.000"
       ],
-      "last_seen": "2026-10-28T07:48:35.888781+00:00"
+      "last_seen": "2026-10-28T14:38:20.271751+00:00"
     },
     "885f3d05f3ab7d7bf7b26aebb58946bb": {
       "decision": "REJECT",
@@ -27063,7 +26153,7 @@
         "source_reliability:minimum authoritative reliability=0.000",
         "overall_confidence:noncompensatory weighted confidence=0.000"
       ],
-      "last_seen": "2026-10-28T07:48:36.787529+00:00"
+      "last_seen": "2026-10-28T14:38:21.610263+00:00"
     },
     "729a227af45e6c5e81079fce913c0004": {
       "decision": "REJECT",
@@ -27081,7 +26171,7 @@
         "source_reliability:minimum authoritative reliability=0.000",
         "overall_confidence:noncompensatory weighted confidence=0.000"
       ],
-      "last_seen": "2026-10-28T07:48:36.874096+00:00"
+      "last_seen": "2026-10-28T14:38:21.721864+00:00"
     },
     "b957065c54e7c3fa326f720a8c368533": {
       "decision": "REJECT",
@@ -27099,7 +26189,7 @@
         "temporal_consistency:awaiting authoritative timestamp",
         "source_reliability:minimum authoritative reliability=0.000"
       ],
-      "last_seen": "2026-10-28T07:48:37.914499+00:00"
+      "last_seen": "2026-10-28T14:38:23.089115+00:00"
     },
     "be1082e62de76ee0484f81a4df648f99": {
       "decision": "REJECT",
@@ -27117,7 +26207,7 @@
         "source_reliability:minimum authoritative reliability=0.000",
         "overall_confidence:noncompensatory weighted confidence=0.000"
       ],
-      "last_seen": "2026-10-28T07:48:34.868118+00:00"
+      "last_seen": "2026-10-28T14:38:23.529484+00:00"
     },
     "68f07b54065edef831eee8b11429e895": {
       "decision": "REJECT",
@@ -27135,7 +26225,7 @@
         "mandatory_facts:missing=[]; unsupported=[]",
         "temporal_consistency:awaiting authoritative timestamp"
       ],
-      "last_seen": "2026-10-28T07:48:38.442533+00:00"
+      "last_seen": "2026-10-28T14:38:23.818699+00:00"
     },
     "457311a9e33bf4903bca4d7f8065df65": {
       "decision": "REJECT",
@@ -27153,7 +26243,7 @@
         "temporal_consistency:awaiting authoritative timestamp",
         "source_reliability:minimum authoritative reliability=0.000"
       ],
-      "last_seen": "2026-10-28T07:48:38.392360+00:00"
+      "last_seen": "2026-10-28T14:38:23.880799+00:00"
     },
     "042011a20957c46347519d7c4ed4365e": {
       "decision": "REJECT",
@@ -27171,7 +26261,7 @@
         "source_reliability:minimum authoritative reliability=0.000",
         "overall_confidence:noncompensatory weighted confidence=0.000"
       ],
-      "last_seen": "2026-10-28T07:48:39.447492+00:00"
+      "last_seen": "2026-10-28T14:38:25.407383+00:00"
     },
     "b454ced3bea4a96ed22da564017e7cc6": {
       "decision": "REJECT",
@@ -27189,7 +26279,7 @@
         "source_reliability:minimum authoritative reliability=0.000",
         "overall_confidence:noncompensatory weighted confidence=0.000"
       ],
-      "last_seen": "2026-10-28T07:48:39.506164+00:00"
+      "last_seen": "2026-10-28T14:38:25.478115+00:00"
     },
     "28966488072471b60aa6f6f358361a79": {
       "decision": "REJECT",
@@ -27207,7 +26297,7 @@
         "source_reliability:minimum authoritative reliability=0.000",
         "overall_confidence:noncompensatory weighted confidence=0.000"
       ],
-      "last_seen": "2026-10-28T07:48:39.562963+00:00"
+      "last_seen": "2026-10-28T14:38:25.589433+00:00"
     },
     "3376736678289d87d68350f8069b8fbc": {
       "decision": "REJECT",
@@ -27243,7 +26333,7 @@
         "source_reliability:minimum authoritative reliability=0.000",
         "overall_confidence:noncompensatory weighted confidence=0.000"
       ],
-      "last_seen": "2026-10-28T07:48:40.235101+00:00"
+      "last_seen": "2026-10-28T14:38:27.087644+00:00"
     },
     "ea9ac2c185360d66364bc9106a329d3a": {
       "decision": "REJECT",
@@ -27261,7 +26351,7 @@
         "source_reliability:minimum authoritative reliability=0.000",
         "overall_confidence:noncompensatory weighted confidence=0.000"
       ],
-      "last_seen": "2026-10-28T07:48:40.681024+00:00"
+      "last_seen": "2026-10-28T14:38:27.807785+00:00"
     },
     "f469a5f4590873eed701d66a7dd4194e": {
       "decision": "PENDING",
@@ -27277,7 +26367,7 @@
         "source_reliability:minimum authoritative reliability=0.000",
         "overall_confidence:noncompensatory weighted confidence=0.000"
       ],
-      "last_seen": "2026-10-28T07:48:40.817222+00:00"
+      "last_seen": "2026-10-28T14:38:27.979964+00:00"
     },
     "81c87b76f6a4d318ee709d4d73b35951": {
       "decision": "REJECT",
@@ -27288,7 +26378,7 @@
         "mandatory_facts:missing=['subject_id', 'subject_name']; unsupported=[]",
         "overall_confidence:noncompensatory weighted confidence=0.000"
       ],
-      "last_seen": "2026-10-28T07:48:34.280383+00:00"
+      "last_seen": "2026-10-28T14:38:28.184526+00:00"
     },
     "b9503240d6086611670b8f19636f5645": {
       "decision": "REJECT",
@@ -27306,7 +26396,7 @@
         "mandatory_facts:missing=[]; unsupported=[]",
         "temporal_consistency:awaiting authoritative timestamp"
       ],
-      "last_seen": "2026-10-28T07:48:41.503250+00:00"
+      "last_seen": "2026-10-28T14:38:29.969602+00:00"
     },
     "f0a36e4a2750e8ba2f3ddefdf5a8142c": {
       "decision": "REJECT",
@@ -27324,7 +26414,7 @@
         "mandatory_facts:missing=[]; unsupported=[]",
         "temporal_consistency:awaiting authoritative timestamp"
       ],
-      "last_seen": "2026-10-28T07:48:42.056139+00:00"
+      "last_seen": "2026-10-28T14:38:31.315420+00:00"
     },
     "2caecf9db9266c4f425d96c357960e0a": {
       "decision": "REJECT",
@@ -27342,7 +26432,7 @@
         "mandatory_facts:missing=[]; unsupported=[]",
         "temporal_consistency:awaiting authoritative timestamp"
       ],
-      "last_seen": "2026-10-28T07:48:42.112942+00:00"
+      "last_seen": "2026-10-28T14:38:31.548867+00:00"
     },
     "53e99dfe3022f2f1fb488cda4934f6ed": {
       "decision": "REJECT",
@@ -27360,7 +26450,7 @@
         "mandatory_facts:missing=[]; unsupported=[]",
         "temporal_consistency:awaiting authoritative timestamp"
       ],
-      "last_seen": "2026-10-28T07:48:42.170775+00:00"
+      "last_seen": "2026-10-28T14:38:31.665441+00:00"
     },
     "33a21d122a7bf6da944d92d5d8d1b39e": {
       "decision": "REJECT",
@@ -27378,7 +26468,7 @@
         "source_reliability:minimum authoritative reliability=0.000",
         "overall_confidence:noncompensatory weighted confidence=0.000"
       ],
-      "last_seen": "2026-10-28T07:48:42.617394+00:00"
+      "last_seen": "2026-10-28T14:38:32.596580+00:00"
     },
     "0ec721091ef83c22048b52d8bbdcdaba": {
       "decision": "REJECT",
@@ -27395,7 +26485,7 @@
         "source_reliability:minimum authoritative reliability=0.000",
         "overall_confidence:noncompensatory weighted confidence=0.000"
       ],
-      "last_seen": "2026-10-28T07:48:43.214323+00:00"
+      "last_seen": "2026-10-28T14:38:33.843621+00:00"
     },
     "9da75d3c61c5ce0a7040e609040fb886": {
       "decision": "REJECT",
@@ -27412,7 +26502,7 @@
         "source_reliability:minimum authoritative reliability=0.000",
         "overall_confidence:noncompensatory weighted confidence=0.000"
       ],
-      "last_seen": "2026-10-28T07:48:43.299257+00:00"
+      "last_seen": "2026-10-28T14:38:33.971829+00:00"
     },
     "148da7f48c97de4d267b1c9dc20b9cca": {
       "decision": "REJECT",
@@ -27430,7 +26520,7 @@
         "mandatory_facts:missing=[]; unsupported=[]",
         "temporal_consistency:awaiting authoritative timestamp"
       ],
-      "last_seen": "2026-10-28T07:48:43.396861+00:00"
+      "last_seen": "2026-10-28T14:38:34.103236+00:00"
     },
     "3ddc4270b9d994e3bc18891830b684f3": {
       "decision": "REJECT",
@@ -27448,7 +26538,7 @@
         "source_reliability:minimum authoritative reliability=0.000",
         "overall_confidence:noncompensatory weighted confidence=0.000"
       ],
-      "last_seen": "2026-10-28T07:48:43.479182+00:00"
+      "last_seen": "2026-10-28T14:38:34.305438+00:00"
     },
     "9b691cf269174ad2edb15565dee13030": {
       "decision": "REJECT",
@@ -27466,7 +26556,7 @@
         "mandatory_facts:missing=[]; unsupported=[]",
         "temporal_consistency:awaiting authoritative timestamp"
       ],
-      "last_seen": "2026-10-28T07:48:43.992441+00:00"
+      "last_seen": "2026-10-28T14:38:35.559151+00:00"
     },
     "dcf7cdd77f595b80894fa3c4efab672c": {
       "decision": "REJECT",
@@ -27484,7 +26574,7 @@
         "source_reliability:minimum authoritative reliability=0.000",
         "overall_confidence:noncompensatory weighted confidence=0.000"
       ],
-      "last_seen": "2026-10-28T07:48:44.520305+00:00"
+      "last_seen": "2026-10-28T14:38:37.081929+00:00"
     },
     "aa501e6a8bd4da7f4d7fc59c56fe7136": {
       "decision": "REJECT",
@@ -27556,7 +26646,7 @@
         "source_reliability:minimum authoritative reliability=0.000",
         "overall_confidence:noncompensatory weighted confidence=0.000"
       ],
-      "last_seen": "2026-10-28T07:48:31.104165+00:00"
+      "last_seen": "2026-10-28T14:38:13.309937+00:00"
     },
     "0452931962bf06bb92e1e65c0f6e744b": {
       "decision": "REJECT",
@@ -27574,7 +26664,7 @@
         "temporal_consistency:awaiting authoritative timestamp",
         "source_reliability:minimum authoritative reliability=0.000"
       ],
-      "last_seen": "2026-10-28T07:48:31.159189+00:00"
+      "last_seen": "2026-10-28T14:38:13.376559+00:00"
     },
     "ae6140d58dd4a0ec7d6c2bc0cebb803b": {
       "decision": "REJECT",
@@ -27609,7 +26699,7 @@
         "mandatory_facts:missing=[]; unsupported=[]",
         "temporal_consistency:awaiting authoritative timestamp"
       ],
-      "last_seen": "2026-10-28T07:48:32.860322+00:00"
+      "last_seen": "2026-10-28T14:38:16.372360+00:00"
     },
     "291408b485e140276b34e5096a6a90f2": {
       "decision": "REJECT",
@@ -27645,7 +26735,7 @@
         "source_reliability:minimum authoritative reliability=0.000",
         "overall_confidence:noncompensatory weighted confidence=0.000"
       ],
-      "last_seen": "2026-10-28T07:48:33.234991+00:00"
+      "last_seen": "2026-10-28T14:38:17.181710+00:00"
     },
     "0e0cedd7f2b91766746a860b6d0a34d8": {
       "decision": "REJECT",
@@ -27979,7 +27069,7 @@
         "fact_consensus:conflicts={'club_id': {'club sunderland': ['club.brentford'], 'club brentford': ['official.fpl']}, 'injury_status': {'sunderland v brentford team news henry ruled out through injury brentford fc': ['club.brentford'], 'hip injury unknown return date': ['official.fpl']}}",
         "overall_confidence:noncompensatory weighted confidence=0.000"
       ],
-      "last_seen": "2026-10-28T07:48:44.416364+00:00"
+      "last_seen": "2026-10-28T14:38:36.483648+00:00"
     },
     "813b57d1795fad0144435d5ddf32e5cb": {
       "decision": "REJECT",
@@ -27988,10 +27078,10 @@
       "reasons": [
         "entity_validation:mandatory person/club identity or relationship is unresolved",
         "mandatory_facts:missing=['subject_id', 'subject_name', 'quote_summary']; unsupported=[]",
-        "temporal_consistency:official confirmation is 118.3h old",
+        "temporal_consistency:official confirmation is 125.1h old",
         "overall_confidence:noncompensatory weighted confidence=0.000"
       ],
-      "last_seen": "2026-10-28T07:48:38.220923+00:00"
+      "last_seen": "2026-10-28T14:38:23.620919+00:00"
     },
     "5c3975675b88546fe39463ab6931b9ba": {
       "decision": "REJECT",
@@ -28009,7 +27099,7 @@
         "source_reliability:minimum authoritative reliability=0.000",
         "overall_confidence:noncompensatory weighted confidence=0.000"
       ],
-      "last_seen": "2026-10-28T07:48:38.285033+00:00"
+      "last_seen": "2026-10-28T14:38:23.548289+00:00"
     },
     "50f80d8d25b1d1f44cd2c5ae62ebe0b9": {
       "decision": "REJECT",
@@ -28027,7 +27117,7 @@
         "temporal_consistency:awaiting authoritative timestamp",
         "source_reliability:minimum authoritative reliability=0.000"
       ],
-      "last_seen": "2026-10-28T07:48:38.336030+00:00"
+      "last_seen": "2026-10-28T14:38:23.747200+00:00"
     },
     "8f30de8915dfbef0564f347ebda9a6d5": {
       "decision": "REJECT",
@@ -28045,7 +27135,7 @@
         "temporal_consistency:awaiting authoritative timestamp",
         "source_reliability:minimum authoritative reliability=0.000"
       ],
-      "last_seen": "2026-10-28T07:48:38.814849+00:00"
+      "last_seen": "2026-10-28T14:38:24.499994+00:00"
     },
     "09614a5b210ccc7a9069bf61783d53ba": {
       "decision": "REJECT",
@@ -28063,7 +27153,7 @@
         "source_reliability:minimum authoritative reliability=0.000",
         "overall_confidence:noncompensatory weighted confidence=0.000"
       ],
-      "last_seen": "2026-10-28T07:48:40.095404+00:00"
+      "last_seen": "2026-10-28T14:38:26.895822+00:00"
     },
     "193a247d93c4e1fea56e60e4160125a6": {
       "decision": "REJECT",
@@ -28081,7 +27171,7 @@
         "temporal_consistency:awaiting authoritative timestamp",
         "source_reliability:minimum authoritative reliability=0.000"
       ],
-      "last_seen": "2026-10-28T07:48:40.165084+00:00"
+      "last_seen": "2026-10-28T14:38:39.480492+00:00"
     },
     "45976313db99b45c7461e2f53328a7e5": {
       "decision": "REJECT",
@@ -28099,7 +27189,7 @@
         "temporal_consistency:awaiting authoritative timestamp",
         "source_reliability:minimum authoritative reliability=0.000"
       ],
-      "last_seen": "2026-10-28T07:48:40.599972+00:00"
+      "last_seen": "2026-10-28T14:38:27.702239+00:00"
     },
     "65981b315f7027f28c29f0864b286046": {
       "decision": "REJECT",
@@ -28116,7 +27206,7 @@
         "source_reliability:minimum authoritative reliability=0.000",
         "overall_confidence:noncompensatory weighted confidence=0.000"
       ],
-      "last_seen": "2026-10-28T07:48:39.392742+00:00"
+      "last_seen": "2026-10-28T14:38:25.337973+00:00"
     },
     "2d2303b13ff8dd3828abf1e7943b8981": {
       "decision": "REJECT",
@@ -28126,10 +27216,10 @@
         "entity_validation:mandatory person/club identity or relationship is unresolved",
         "mandatory_facts:missing=['subject_id', 'subject_name', 'quote_summary']; unsupported=[]",
         "fact_consensus:conflicts={'quote_summary': {'key talking points from sonia bompastor s pre crystal palace press conference news official site chelsea football club': ['club.chelsea'], 'as it happened sage mitchell s pre besiktas press conference': ['club.crystal-palace'], 'albion v crystal palace hurzeler pre match press conference': ['club.brighton-and-hove-albion'], 'every word of renee s pre palace press conference arsenal': ['club.arsenal'], 'pre crystal palace press conference': ['club.fulham']}}",
-        "temporal_consistency:official confirmation is 160.2h old",
+        "temporal_consistency:official confirmation is 167.0h old",
         "overall_confidence:noncompensatory weighted confidence=0.000"
       ],
-      "last_seen": "2026-10-28T07:48:40.627097+00:00"
+      "last_seen": "2026-10-28T14:38:27.738480+00:00"
     },
     "56feb6c1edca4be06c3158a017258dc8": {
       "decision": "REJECT",
@@ -28147,7 +27237,7 @@
         "temporal_consistency:awaiting authoritative timestamp",
         "source_reliability:minimum authoritative reliability=0.000"
       ],
-      "last_seen": "2026-10-28T07:48:40.766462+00:00"
+      "last_seen": "2026-10-28T14:38:27.920476+00:00"
     },
     "d69e566742834649e26113d8f76403e6": {
       "decision": "REJECT",
@@ -28165,7 +27255,7 @@
         "mandatory_facts:missing=[]; unsupported=[]",
         "temporal_consistency:awaiting authoritative timestamp"
       ],
-      "last_seen": "2026-10-28T07:48:41.360957+00:00"
+      "last_seen": "2026-10-28T14:38:29.681721+00:00"
     },
     "1d89d047a616eefab4000c41827024f9": {
       "decision": "REJECT",
@@ -28183,7 +27273,7 @@
         "temporal_consistency:awaiting authoritative timestamp",
         "source_reliability:minimum authoritative reliability=0.000"
       ],
-      "last_seen": "2026-10-28T07:48:41.443983+00:00"
+      "last_seen": "2026-10-28T14:38:29.885090+00:00"
     },
     "21933bb6a805ba78f94bbdf22cbb4fdb": {
       "decision": "REJECT",
@@ -28201,7 +27291,7 @@
         "mandatory_facts:missing=[]; unsupported=[]",
         "temporal_consistency:awaiting authoritative timestamp"
       ],
-      "last_seen": "2026-10-28T07:48:41.938191+00:00"
+      "last_seen": "2026-10-28T14:38:31.081286+00:00"
     },
     "d6656596a669b780cc2e2360b03b919e": {
       "decision": "REJECT",
@@ -28219,7 +27309,7 @@
         "mandatory_facts:missing=[]; unsupported=[]",
         "temporal_consistency:awaiting authoritative timestamp"
       ],
-      "last_seen": "2026-10-28T07:48:41.995066+00:00"
+      "last_seen": "2026-10-28T14:38:31.184599+00:00"
     },
     "60cd7dea54469afd1f50db7dd37cb22a": {
       "decision": "REJECT",
@@ -28237,7 +27327,7 @@
         "source_reliability:minimum authoritative reliability=0.000",
         "overall_confidence:noncompensatory weighted confidence=0.000"
       ],
-      "last_seen": "2026-10-28T07:48:42.542447+00:00"
+      "last_seen": "2026-10-28T14:38:32.464815+00:00"
     },
     "64c0eeb1cadc08b0e29a782e1ca54ac9": {
       "decision": "REJECT",
@@ -28273,7 +27363,7 @@
         "source_reliability:minimum authoritative reliability=0.000",
         "overall_confidence:noncompensatory weighted confidence=0.000"
       ],
-      "last_seen": "2026-10-28T07:48:43.127429+00:00"
+      "last_seen": "2026-10-28T14:38:33.724478+00:00"
     },
     "8e1e26812c9ebf45350ef7e5f8b8c2c2": {
       "decision": "REJECT",
@@ -28291,7 +27381,7 @@
         "temporal_consistency:awaiting authoritative timestamp",
         "source_reliability:minimum authoritative reliability=0.000"
       ],
-      "last_seen": "2026-10-28T07:48:43.935626+00:00"
+      "last_seen": "2026-10-28T14:38:35.375101+00:00"
     },
     "91940b600fb487170248813da08eef79": {
       "decision": "REJECT",
@@ -28309,7 +27399,7 @@
         "source_reliability:minimum authoritative reliability=0.000",
         "overall_confidence:noncompensatory weighted confidence=0.000"
       ],
-      "last_seen": "2026-10-28T07:48:44.681909+00:00"
+      "last_seen": "2026-10-28T14:38:37.321272+00:00"
     },
     "400b58dffb0ec6e84d40f64f883b2cc5": {
       "decision": "REJECT",
@@ -28327,7 +27417,7 @@
         "source_reliability:minimum authoritative reliability=0.000",
         "overall_confidence:noncompensatory weighted confidence=0.000"
       ],
-      "last_seen": "2026-10-28T07:48:45.155940+00:00"
+      "last_seen": "2026-10-28T14:38:39.423510+00:00"
     },
     "b7346124bed3775c9461193910516d6f": {
       "decision": "REJECT",
@@ -28381,7 +27471,7 @@
         "source_reliability:minimum authoritative reliability=0.000",
         "overall_confidence:noncompensatory weighted confidence=0.000"
       ],
-      "last_seen": "2026-10-28T01:59:11.326860+00:00"
+      "last_seen": "2026-10-28T14:38:40.419590+00:00"
     },
     "342063d3102fefbb54c3e25b4226d9ab": {
       "decision": "REJECT",
@@ -28399,17 +27489,17 @@
         "source_reliability:minimum authoritative reliability=0.000",
         "overall_confidence:noncompensatory weighted confidence=0.000"
       ],
-      "last_seen": "2026-10-28T07:48:45.964923+00:00"
+      "last_seen": "2026-10-28T14:38:40.478801+00:00"
     },
     "1604c27569d890adc52dfdc496b52125": {
       "decision": "PENDING",
       "event": "INJURY",
       "status": "OFFICIAL",
       "reasons": [
-        "temporal_consistency:official confirmation is 640.3h old",
+        "temporal_consistency:official confirmation is 647.1h old",
         "overall_confidence:noncompensatory weighted confidence=0.000"
       ],
-      "last_seen": "2026-10-28T07:48:46.404948+00:00"
+      "last_seen": "2026-10-28T14:38:41.189354+00:00"
     },
     "d6b47ef4000e0cb19f91a443dde018a0": {
       "decision": "REJECT",
@@ -28427,7 +27517,7 @@
         "temporal_consistency:awaiting authoritative timestamp",
         "source_reliability:minimum authoritative reliability=0.000"
       ],
-      "last_seen": "2026-10-28T07:48:30.088971+00:00"
+      "last_seen": "2026-10-28T14:38:11.514909+00:00"
     },
     "2a639cf25e9ee48d78ca3634f7acd073": {
       "decision": "PENDING",
@@ -28443,7 +27533,7 @@
         "source_reliability:minimum authoritative reliability=0.000",
         "overall_confidence:noncompensatory weighted confidence=0.000"
       ],
-      "last_seen": "2026-10-27T22:58:54.581047+00:00"
+      "last_seen": "2026-10-28T14:38:12.069744+00:00"
     },
     "603b9a25a7a73a006c1b75649712925c": {
       "decision": "REJECT",
@@ -28461,7 +27551,7 @@
         "temporal_consistency:awaiting authoritative timestamp",
         "source_reliability:minimum authoritative reliability=0.000"
       ],
-      "last_seen": "2026-10-28T07:48:30.823236+00:00"
+      "last_seen": "2026-10-28T14:38:12.420481+00:00"
     },
     "c6e4969157e8c1327757b32fb4970a9c": {
       "decision": "REJECT",
@@ -28497,7 +27587,7 @@
         "mandatory_facts:missing=[]; unsupported=[]",
         "temporal_consistency:awaiting authoritative timestamp"
       ],
-      "last_seen": "2026-10-28T07:48:32.850947+00:00"
+      "last_seen": "2026-10-28T14:38:16.867789+00:00"
     },
     "f4569c31cf476154a84619c00e2e16a4": {
       "decision": "REJECT",
@@ -28550,7 +27640,7 @@
         "temporal_consistency:awaiting authoritative timestamp",
         "source_reliability:minimum authoritative reliability=0.000"
       ],
-      "last_seen": "2026-10-28T07:48:33.512040+00:00"
+      "last_seen": "2026-10-28T14:38:17.968062+00:00"
     },
     "b2b2da922518b17bd1789a1f6fed262e": {
       "decision": "REJECT",
@@ -28568,7 +27658,7 @@
         "mandatory_facts:missing=[]; unsupported=[]",
         "temporal_consistency:awaiting authoritative timestamp"
       ],
-      "last_seen": "2026-10-28T07:48:33.566021+00:00"
+      "last_seen": "2026-10-28T14:38:18.425687+00:00"
     },
     "31bfe8b78caba92a3ceecaccfa4dcc8a": {
       "decision": "REJECT",
@@ -28604,7 +27694,7 @@
         "temporal_consistency:awaiting authoritative timestamp",
         "source_reliability:minimum authoritative reliability=0.000"
       ],
-      "last_seen": "2026-10-28T07:48:33.723521+00:00"
+      "last_seen": "2026-10-28T14:38:18.617446+00:00"
     },
     "c07f832cceb9241e1c0d860024a626bd": {
       "decision": "REJECT",
@@ -28748,7 +27838,7 @@
         "mandatory_facts:missing=[]; unsupported=[]",
         "temporal_consistency:awaiting authoritative timestamp"
       ],
-      "last_seen": "2026-10-28T07:48:35.049760+00:00"
+      "last_seen": "2026-10-28T14:38:19.317544+00:00"
     },
     "f03eb6fd5a7d8a57bc5956dcde2ee0a7": {
       "decision": "REJECT",
@@ -28766,7 +27856,7 @@
         "temporal_consistency:awaiting authoritative timestamp",
         "source_reliability:minimum authoritative reliability=0.000"
       ],
-      "last_seen": "2026-10-28T07:48:35.120073+00:00"
+      "last_seen": "2026-10-28T14:38:19.016668+00:00"
     },
     "6be602beb4fea8aacc42642ecd152c3b": {
       "decision": "REJECT",
@@ -28784,7 +27874,7 @@
         "source_reliability:minimum authoritative reliability=0.000",
         "overall_confidence:noncompensatory weighted confidence=0.000"
       ],
-      "last_seen": "2026-10-28T07:48:35.616876+00:00"
+      "last_seen": "2026-10-28T14:38:19.920964+00:00"
     },
     "a752d73e55be2fae9c588074143b82b8": {
       "decision": "REJECT",
@@ -28802,7 +27892,7 @@
         "source_reliability:minimum authoritative reliability=0.000",
         "overall_confidence:noncompensatory weighted confidence=0.000"
       ],
-      "last_seen": "2026-10-28T07:48:36.081275+00:00"
+      "last_seen": "2026-10-28T14:38:20.551127+00:00"
     },
     "17cd4251bb7167b338fee284366d529a": {
       "decision": "REJECT",
@@ -28820,7 +27910,7 @@
         "temporal_consistency:awaiting authoritative timestamp",
         "source_reliability:minimum authoritative reliability=0.000"
       ],
-      "last_seen": "2026-10-28T07:48:38.273175+00:00"
+      "last_seen": "2026-10-28T14:38:23.681779+00:00"
     },
     "ae29b5a158089389cdd18154f58e23cd": {
       "decision": "REJECT",
@@ -28838,7 +27928,7 @@
         "source_reliability:minimum authoritative reliability=0.000",
         "overall_confidence:noncompensatory weighted confidence=0.000"
       ],
-      "last_seen": "2026-10-28T07:48:39.164463+00:00"
+      "last_seen": "2026-10-28T14:38:25.041667+00:00"
     },
     "c3c6757640e2d26747a6e647e986afc5": {
       "decision": "REJECT",
@@ -28856,7 +27946,7 @@
         "mandatory_facts:missing=[]; unsupported=[]",
         "temporal_consistency:awaiting authoritative timestamp"
       ],
-      "last_seen": "2026-10-28T07:48:39.219404+00:00"
+      "last_seen": "2026-10-28T14:38:25.113304+00:00"
     },
     "c5d9db09d810720a3e8e85a682bef0f0": {
       "decision": "REJECT",
@@ -28874,7 +27964,7 @@
         "temporal_consistency:awaiting authoritative timestamp",
         "source_reliability:minimum authoritative reliability=0.000"
       ],
-      "last_seen": "2026-10-28T07:48:40.035391+00:00"
+      "last_seen": "2026-10-28T14:38:26.654488+00:00"
     },
     "236571bc5be0c89c0375bc9f891c9716": {
       "decision": "REJECT",
@@ -28892,7 +27982,7 @@
         "official_confirmation:media/journalist evidence remains pending",
         "mandatory_facts:missing=[]; unsupported=[]"
       ],
-      "last_seen": "2026-10-28T07:48:41.765031+00:00"
+      "last_seen": "2026-10-28T14:38:30.628236+00:00"
     },
     "9956f2d588a875cb81398bd6dacc4ba8": {
       "decision": "REJECT",
@@ -28910,7 +28000,7 @@
         "mandatory_facts:missing=[]; unsupported=[]",
         "temporal_consistency:awaiting authoritative timestamp"
       ],
-      "last_seen": "2026-10-28T07:48:41.820595+00:00"
+      "last_seen": "2026-10-28T14:38:30.704305+00:00"
     },
     "6ab39fc753c0c72791184ce9b7b256c7": {
       "decision": "REJECT",
@@ -28946,7 +28036,7 @@
         "mandatory_facts:missing=[]; unsupported=[]",
         "temporal_consistency:awaiting authoritative timestamp"
       ],
-      "last_seen": "2026-10-28T07:48:41.877833+00:00"
+      "last_seen": "2026-10-28T14:38:30.836117+00:00"
     },
     "16e30021cbfb9707bbd513868e539b80": {
       "decision": "REJECT",
@@ -28964,7 +28054,7 @@
         "temporal_consistency:awaiting authoritative timestamp",
         "source_reliability:minimum authoritative reliability=0.000"
       ],
-      "last_seen": "2026-10-28T07:48:42.996825+00:00"
+      "last_seen": "2026-10-28T14:38:33.615753+00:00"
     },
     "89ef430f5b6a998d916133b5e7961f6e": {
       "decision": "REJECT",
@@ -28982,7 +28072,7 @@
         "source_reliability:minimum authoritative reliability=0.000",
         "overall_confidence:noncompensatory weighted confidence=0.000"
       ],
-      "last_seen": "2026-10-28T07:48:44.880234+00:00"
+      "last_seen": "2026-10-28T14:38:37.980137+00:00"
     },
     "280ea7018025370c3599917649658d2c": {
       "decision": "REJECT",
@@ -29036,7 +28126,7 @@
         "temporal_consistency:awaiting authoritative timestamp",
         "source_reliability:minimum authoritative reliability=0.000"
       ],
-      "last_seen": "2026-10-28T07:48:30.146455+00:00"
+      "last_seen": "2026-10-28T14:38:11.379837+00:00"
     },
     "8b7a0a93931a3b2082552d97edc52ad4": {
       "decision": "REJECT",
@@ -29054,7 +28144,7 @@
         "source_reliability:minimum authoritative reliability=0.000",
         "overall_confidence:noncompensatory weighted confidence=0.000"
       ],
-      "last_seen": "2026-10-28T07:48:30.744956+00:00"
+      "last_seen": "2026-10-28T14:38:12.526867+00:00"
     },
     "fcb9f19a911eb0a81d5f2359b552229c": {
       "decision": "REJECT",
@@ -29071,7 +28161,7 @@
         "source_reliability:minimum authoritative reliability=0.000",
         "overall_confidence:noncompensatory weighted confidence=0.000"
       ],
-      "last_seen": "2026-10-28T07:48:30.987467+00:00"
+      "last_seen": "2026-10-28T14:38:12.808041+00:00"
     },
     "59e3509468bdceee87174b20df145290": {
       "decision": "REJECT",
@@ -29089,7 +28179,7 @@
         "source_reliability:minimum authoritative reliability=0.000",
         "overall_confidence:noncompensatory weighted confidence=0.000"
       ],
-      "last_seen": "2026-10-28T07:48:32.406713+00:00"
+      "last_seen": "2026-10-28T14:38:17.050179+00:00"
     },
     "8d8f9e3d4de81c5f4427e4a47419b4f0": {
       "decision": "REJECT",
@@ -29107,7 +28197,7 @@
         "source_reliability:minimum authoritative reliability=0.000",
         "overall_confidence:noncompensatory weighted confidence=0.000"
       ],
-      "last_seen": "2026-10-28T07:48:32.460919+00:00"
+      "last_seen": "2026-10-28T14:38:16.927607+00:00"
     },
     "4889bad2c113ed6131aeb8474cd1eee2": {
       "decision": "REJECT",
@@ -29125,7 +28215,7 @@
         "source_reliability:minimum authoritative reliability=0.000",
         "overall_confidence:noncompensatory weighted confidence=0.000"
       ],
-      "last_seen": "2026-10-28T07:48:33.402480+00:00"
+      "last_seen": "2026-10-28T14:38:16.990066+00:00"
     },
     "9f8948923daab8f2a832a5c22e8315ab": {
       "decision": "REJECT",
@@ -29143,7 +28233,7 @@
         "mandatory_facts:missing=[]; unsupported=[]",
         "temporal_consistency:awaiting authoritative timestamp"
       ],
-      "last_seen": "2026-10-28T07:48:33.621801+00:00"
+      "last_seen": "2026-10-28T14:38:18.201720+00:00"
     },
     "f3061c34a0514587fe422b22a83c5b28": {
       "decision": "REJECT",
@@ -29215,7 +28305,7 @@
         "mandatory_facts:missing=[]; unsupported=[]",
         "temporal_consistency:awaiting authoritative timestamp"
       ],
-      "last_seen": "2026-10-28T07:48:35.233261+00:00"
+      "last_seen": "2026-10-28T14:38:19.079346+00:00"
     },
     "0628bd3bf6979c26a5c5a5ee5ca4de53": {
       "decision": "REJECT",
@@ -29233,7 +28323,7 @@
         "source_reliability:minimum authoritative reliability=0.000",
         "overall_confidence:noncompensatory weighted confidence=0.000"
       ],
-      "last_seen": "2026-10-28T07:48:39.275140+00:00"
+      "last_seen": "2026-10-28T14:38:25.195708+00:00"
     },
     "c5fe6696e3662dd44d12ec2a66bb0886": {
       "decision": "REJECT",
@@ -29251,7 +28341,7 @@
         "mandatory_facts:missing=[]; unsupported=[]",
         "temporal_consistency:awaiting authoritative timestamp"
       ],
-      "last_seen": "2026-10-28T07:48:41.710178+00:00"
+      "last_seen": "2026-10-28T14:38:30.500236+00:00"
     },
     "ede91f7a34298665e84ff9615e0b1471": {
       "decision": "REJECT",
@@ -29269,7 +28359,7 @@
         "source_reliability:minimum authoritative reliability=0.000",
         "overall_confidence:noncompensatory weighted confidence=0.000"
       ],
-      "last_seen": "2026-10-28T07:48:44.730943+00:00"
+      "last_seen": "2026-10-28T14:38:37.488842+00:00"
     },
     "9e44177cdaa1d91f7ab80e50d708d52b": {
       "decision": "REJECT",
@@ -29287,19 +28377,19 @@
         "source_reliability:minimum authoritative reliability=0.000",
         "overall_confidence:noncompensatory weighted confidence=0.000"
       ],
-      "last_seen": "2026-10-28T07:48:44.780816+00:00"
+      "last_seen": "2026-10-28T14:38:37.697014+00:00"
     },
     "e40731ad1d27120e41a74a4479b38cc9": {
       "decision": "DUPLICATE",
       "event": "INJURY",
       "status": "OFFICIAL",
       "reasons": [
-        "temporal_consistency:official confirmation is 882.8h old",
+        "temporal_consistency:official confirmation is 889.6h old",
         "database_consistency:identical verified facts already published",
         "story_progression:identical verified facts already published",
         "overall_confidence:noncompensatory weighted confidence=0.000"
       ],
-      "last_seen": "2026-10-28T07:48:46.061853+00:00"
+      "last_seen": "2026-10-28T14:38:40.751822+00:00"
     },
     "c3d489ea37f1179a9750253876ae2c9d": {
       "decision": "DUPLICATE",
@@ -29310,7 +28400,7 @@
         "story_progression:identical verified facts already published",
         "overall_confidence:noncompensatory weighted confidence=0.000"
       ],
-      "last_seen": "2026-10-28T07:48:46.254605+00:00"
+      "last_seen": "2026-10-28T14:38:41.002251+00:00"
     },
     "005d6212901a53e4523e4e4afb6c0dcb": {
       "decision": "REJECT",
@@ -29328,7 +28418,7 @@
         "temporal_consistency:awaiting authoritative timestamp",
         "source_reliability:minimum authoritative reliability=0.000"
       ],
-      "last_seen": "2026-10-28T07:48:29.953698+00:00"
+      "last_seen": "2026-10-28T14:38:11.250434+00:00"
     },
     "26b0cbead3fd26c25c5fd6685a2f225e": {
       "decision": "REJECT",
@@ -29346,7 +28436,7 @@
         "mandatory_facts:missing=[]; unsupported=[]",
         "temporal_consistency:awaiting authoritative timestamp"
       ],
-      "last_seen": "2026-10-28T07:48:32.515065+00:00"
+      "last_seen": "2026-10-28T14:38:16.427983+00:00"
     },
     "6f7ce7c850fa7131f5e80624101235fa": {
       "decision": "REJECT",
@@ -29364,7 +28454,7 @@
         "mandatory_facts:missing=[]; unsupported=[]",
         "temporal_consistency:awaiting authoritative timestamp"
       ],
-      "last_seen": "2026-10-28T07:48:33.458385+00:00"
+      "last_seen": "2026-10-28T14:38:18.070661+00:00"
     },
     "4d63d95325d221e14b62ad6a9261c5ad": {
       "decision": "REJECT",
@@ -29436,7 +28526,7 @@
         "mandatory_facts:missing=[]; unsupported=[]",
         "temporal_consistency:awaiting authoritative timestamp"
       ],
-      "last_seen": "2026-10-28T07:48:38.211385+00:00"
+      "last_seen": "2026-10-28T14:38:23.609827+00:00"
     },
     "fe84087760aa7053591ec36e0ba86f5e": {
       "decision": "REJECT",
@@ -29472,7 +28562,919 @@
         "source_reliability:minimum authoritative reliability=0.000",
         "overall_confidence:noncompensatory weighted confidence=0.000"
       ],
-      "last_seen": "2026-10-28T07:48:45.863931+00:00"
+      "last_seen": "2026-10-28T14:38:40.360131+00:00"
+    },
+    "94dc6d896664372e9acf53aaccbd33f9": {
+      "decision": "REJECT",
+      "event": "UNKNOWN",
+      "status": "UNKNOWN",
+      "reasons": [
+        "event_classification:conflicting or missing event classifications",
+        "entity_validation:mandatory person/club identity or relationship is unresolved",
+        "league_validation:no active Premier League relationship",
+        "source_provenance:no verified authoritative source yet",
+        "source_url:authoritative source URL missing",
+        "event_status:status=UNKNOWN; publishable=False",
+        "official_confirmation:media/journalist evidence remains pending",
+        "mandatory_facts:missing=[]; unsupported=[]",
+        "temporal_consistency:awaiting authoritative timestamp",
+        "source_reliability:minimum authoritative reliability=0.000"
+      ],
+      "last_seen": "2026-10-28T14:38:11.311382+00:00"
+    },
+    "62a441b7ac3b28f90da8a4f862387c5b": {
+      "decision": "REJECT",
+      "event": "UNKNOWN",
+      "status": "UNKNOWN",
+      "reasons": [
+        "event_classification:conflicting or missing event classifications",
+        "entity_validation:mandatory person/club identity or relationship is unresolved",
+        "league_validation:no active Premier League relationship",
+        "source_provenance:no verified authoritative source yet",
+        "source_url:authoritative source URL missing",
+        "event_status:status=UNKNOWN; publishable=False",
+        "official_confirmation:media/journalist evidence remains pending",
+        "mandatory_facts:missing=[]; unsupported=[]",
+        "temporal_consistency:awaiting authoritative timestamp",
+        "source_reliability:minimum authoritative reliability=0.000"
+      ],
+      "last_seen": "2026-10-28T14:38:11.450255+00:00"
+    },
+    "c2c68bb685e2c3cbdd6942b6ad3e6abe": {
+      "decision": "REJECT",
+      "event": "UNKNOWN",
+      "status": "UNKNOWN",
+      "reasons": [
+        "event_classification:conflicting or missing event classifications",
+        "entity_validation:mandatory person/club identity or relationship is unresolved",
+        "league_validation:no active Premier League relationship",
+        "source_provenance:no verified authoritative source yet",
+        "source_url:authoritative source URL missing",
+        "event_status:status=UNKNOWN; publishable=False",
+        "official_confirmation:media/journalist evidence remains pending",
+        "mandatory_facts:missing=[]; unsupported=[]",
+        "temporal_consistency:awaiting authoritative timestamp",
+        "source_reliability:minimum authoritative reliability=0.000"
+      ],
+      "last_seen": "2026-10-28T14:38:11.601943+00:00"
+    },
+    "4f693461b8f305c3ae357d73566c1bc7": {
+      "decision": "PENDING",
+      "event": "TRANSFER",
+      "status": "UNKNOWN",
+      "reasons": [
+        "source_provenance:no verified authoritative source yet",
+        "source_url:authoritative source URL missing",
+        "event_status:status=UNKNOWN; publishable=False",
+        "official_confirmation:media/journalist evidence remains pending",
+        "mandatory_facts:missing=['subject_id', 'subject_name', 'club_from_id', 'club_from_name', 'club_to_id', 'club_to_name']; unsupported=[]",
+        "temporal_consistency:awaiting authoritative timestamp",
+        "source_reliability:minimum authoritative reliability=0.000",
+        "overall_confidence:noncompensatory weighted confidence=0.000"
+      ],
+      "last_seen": "2026-10-28T14:38:14.330479+00:00"
+    },
+    "54b54b8a71d65cde1831bef94c6da140": {
+      "decision": "REJECT",
+      "event": "UNKNOWN",
+      "status": "UNKNOWN",
+      "reasons": [
+        "event_classification:conflicting or missing event classifications",
+        "entity_validation:mandatory person/club identity or relationship is unresolved",
+        "source_provenance:no verified authoritative source yet",
+        "source_url:authoritative source URL missing",
+        "event_status:status=UNKNOWN; publishable=False",
+        "official_confirmation:media/journalist evidence remains pending",
+        "mandatory_facts:missing=[]; unsupported=[]",
+        "temporal_consistency:awaiting authoritative timestamp",
+        "source_reliability:minimum authoritative reliability=0.000",
+        "overall_confidence:noncompensatory weighted confidence=0.000"
+      ],
+      "last_seen": "2026-10-28T14:38:15.760381+00:00"
+    },
+    "f65e3557f69d107f7d74abd8794cebed": {
+      "decision": "REJECT",
+      "event": "SUSPENSION",
+      "status": "UNKNOWN",
+      "reasons": [
+        "entity_validation:mandatory person/club identity or relationship is unresolved",
+        "sport_validation:football was not positively established",
+        "league_validation:no active Premier League relationship",
+        "source_provenance:no verified authoritative source yet",
+        "source_url:authoritative source URL missing",
+        "event_status:status=UNKNOWN; publishable=False",
+        "official_confirmation:media/journalist evidence remains pending",
+        "mandatory_facts:missing=['subject_id', 'subject_name', 'club_id', 'club_name', 'suspension_status']; unsupported=[]",
+        "temporal_consistency:awaiting authoritative timestamp",
+        "source_reliability:minimum authoritative reliability=0.000"
+      ],
+      "last_seen": "2026-10-28T14:38:15.820911+00:00"
+    },
+    "235568a3031e04deaa84dc3e81d2ea6b": {
+      "decision": "REJECT",
+      "event": "UNKNOWN",
+      "status": "UNKNOWN",
+      "reasons": [
+        "event_classification:conflicting or missing event classifications",
+        "entity_validation:mandatory person/club identity or relationship is unresolved",
+        "source_provenance:no verified authoritative source yet",
+        "source_url:authoritative source URL missing",
+        "event_status:status=UNKNOWN; publishable=False",
+        "official_confirmation:media/journalist evidence remains pending",
+        "mandatory_facts:missing=[]; unsupported=[]",
+        "temporal_consistency:awaiting authoritative timestamp",
+        "source_reliability:minimum authoritative reliability=0.000",
+        "overall_confidence:noncompensatory weighted confidence=0.000"
+      ],
+      "last_seen": "2026-10-28T14:38:16.361818+00:00"
+    },
+    "6a0cf6b1fdb83f5485568f1e82da6c03": {
+      "decision": "REJECT",
+      "event": "UNKNOWN",
+      "status": "UNKNOWN",
+      "reasons": [
+        "event_classification:conflicting or missing event classifications",
+        "entity_validation:mandatory person/club identity or relationship is unresolved",
+        "sport_validation:football was not positively established",
+        "league_validation:no active Premier League relationship",
+        "source_provenance:no verified authoritative source yet",
+        "source_url:authoritative source URL missing",
+        "event_status:status=UNKNOWN; publishable=False",
+        "official_confirmation:media/journalist evidence remains pending",
+        "mandatory_facts:missing=[]; unsupported=[]",
+        "temporal_consistency:awaiting authoritative timestamp"
+      ],
+      "last_seen": "2026-10-28T14:38:17.119505+00:00"
+    },
+    "36cd7431d3ffbcfe61e74231354df22a": {
+      "decision": "REJECT",
+      "event": "UNKNOWN",
+      "status": "UNKNOWN",
+      "reasons": [
+        "event_classification:conflicting or missing event classifications",
+        "entity_validation:mandatory person/club identity or relationship is unresolved",
+        "sport_validation:football was not positively established",
+        "league_validation:no active Premier League relationship",
+        "source_provenance:no verified authoritative source yet",
+        "source_url:authoritative source URL missing",
+        "event_status:status=UNKNOWN; publishable=False",
+        "official_confirmation:media/journalist evidence remains pending",
+        "mandatory_facts:missing=[]; unsupported=[]",
+        "temporal_consistency:awaiting authoritative timestamp"
+      ],
+      "last_seen": "2026-10-28T14:38:17.297340+00:00"
+    },
+    "5fdebb68e4761dba11b65614e93bafd6": {
+      "decision": "REJECT",
+      "event": "UNKNOWN",
+      "status": "UNKNOWN",
+      "reasons": [
+        "event_classification:conflicting or missing event classifications",
+        "entity_validation:mandatory person/club identity or relationship is unresolved",
+        "sport_validation:football was not positively established",
+        "league_validation:no active Premier League relationship",
+        "source_provenance:no verified authoritative source yet",
+        "source_url:authoritative source URL missing",
+        "event_status:status=UNKNOWN; publishable=False",
+        "official_confirmation:media/journalist evidence remains pending",
+        "mandatory_facts:missing=[]; unsupported=[]",
+        "temporal_consistency:awaiting authoritative timestamp"
+      ],
+      "last_seen": "2026-10-28T14:38:17.368185+00:00"
+    },
+    "571c5825652ba5d45361f7910e0562ef": {
+      "decision": "REJECT",
+      "event": "UNKNOWN",
+      "status": "UNKNOWN",
+      "reasons": [
+        "event_classification:conflicting or missing event classifications",
+        "entity_validation:mandatory person/club identity or relationship is unresolved",
+        "sport_validation:football was not positively established",
+        "source_provenance:no verified authoritative source yet",
+        "source_url:authoritative source URL missing",
+        "event_status:status=UNKNOWN; publishable=False",
+        "official_confirmation:media/journalist evidence remains pending",
+        "mandatory_facts:missing=[]; unsupported=[]",
+        "temporal_consistency:awaiting authoritative timestamp",
+        "source_reliability:minimum authoritative reliability=0.000"
+      ],
+      "last_seen": "2026-10-28T14:38:17.429824+00:00"
+    },
+    "e2195560da7d93cc87d14d25fe3b5507": {
+      "decision": "REJECT",
+      "event": "UNKNOWN",
+      "status": "UNKNOWN",
+      "reasons": [
+        "event_classification:conflicting or missing event classifications",
+        "entity_validation:mandatory person/club identity or relationship is unresolved",
+        "sport_validation:football was not positively established",
+        "source_provenance:no verified authoritative source yet",
+        "source_url:authoritative source URL missing",
+        "event_status:status=UNKNOWN; publishable=False",
+        "official_confirmation:media/journalist evidence remains pending",
+        "mandatory_facts:missing=[]; unsupported=[]",
+        "temporal_consistency:awaiting authoritative timestamp",
+        "source_reliability:minimum authoritative reliability=0.000"
+      ],
+      "last_seen": "2026-10-28T14:38:17.498668+00:00"
+    },
+    "62f9aab74b02f6a73e7023e08f4b5902": {
+      "decision": "REJECT",
+      "event": "UNKNOWN",
+      "status": "UNKNOWN",
+      "reasons": [
+        "event_classification:conflicting or missing event classifications",
+        "entity_validation:mandatory person/club identity or relationship is unresolved",
+        "sport_validation:football was not positively established",
+        "league_validation:no active Premier League relationship",
+        "source_provenance:no verified authoritative source yet",
+        "source_url:authoritative source URL missing",
+        "event_status:status=UNKNOWN; publishable=False",
+        "official_confirmation:media/journalist evidence remains pending",
+        "mandatory_facts:missing=[]; unsupported=[]",
+        "temporal_consistency:awaiting authoritative timestamp"
+      ],
+      "last_seen": "2026-10-28T14:38:17.651205+00:00"
+    },
+    "699313bf154dd95c7b99d114f1db54a7": {
+      "decision": "REJECT",
+      "event": "UNKNOWN",
+      "status": "UNKNOWN",
+      "reasons": [
+        "event_classification:conflicting or missing event classifications",
+        "entity_validation:mandatory person/club identity or relationship is unresolved",
+        "sport_validation:football was not positively established",
+        "league_validation:no active Premier League relationship",
+        "source_provenance:no verified authoritative source yet",
+        "source_url:authoritative source URL missing",
+        "event_status:status=UNKNOWN; publishable=False",
+        "official_confirmation:media/journalist evidence remains pending",
+        "mandatory_facts:missing=[]; unsupported=[]",
+        "temporal_consistency:awaiting authoritative timestamp"
+      ],
+      "last_seen": "2026-10-28T14:38:17.718123+00:00"
+    },
+    "4d0b6caa527ab7e3e385228116519ad2": {
+      "decision": "REJECT",
+      "event": "UNKNOWN",
+      "status": "UNKNOWN",
+      "reasons": [
+        "event_classification:conflicting or missing event classifications",
+        "entity_validation:mandatory person/club identity or relationship is unresolved",
+        "sport_validation:football was not positively established",
+        "league_validation:no active Premier League relationship",
+        "source_provenance:no verified authoritative source yet",
+        "source_url:authoritative source URL missing",
+        "event_status:status=UNKNOWN; publishable=False",
+        "official_confirmation:media/journalist evidence remains pending",
+        "mandatory_facts:missing=[]; unsupported=[]",
+        "temporal_consistency:awaiting authoritative timestamp"
+      ],
+      "last_seen": "2026-10-28T14:38:17.839747+00:00"
+    },
+    "9474af0da3d498c081dfaca1a3a46397": {
+      "decision": "REJECT",
+      "event": "UNKNOWN",
+      "status": "UNKNOWN",
+      "reasons": [
+        "event_classification:conflicting or missing event classifications",
+        "entity_validation:mandatory person/club identity or relationship is unresolved",
+        "sport_validation:football was not positively established",
+        "source_provenance:no verified authoritative source yet",
+        "source_url:authoritative source URL missing",
+        "event_status:status=UNKNOWN; publishable=False",
+        "official_confirmation:media/journalist evidence remains pending",
+        "mandatory_facts:missing=[]; unsupported=[]",
+        "temporal_consistency:awaiting authoritative timestamp",
+        "source_reliability:minimum authoritative reliability=0.000"
+      ],
+      "last_seen": "2026-10-28T14:38:17.901530+00:00"
+    },
+    "1d6ac2bec050ebf33b8e419bb251fa15": {
+      "decision": "REJECT",
+      "event": "UNKNOWN",
+      "status": "UNKNOWN",
+      "reasons": [
+        "event_classification:conflicting or missing event classifications",
+        "entity_validation:mandatory person/club identity or relationship is unresolved",
+        "sport_validation:football was not positively established",
+        "league_validation:no active Premier League relationship",
+        "source_provenance:no verified authoritative source yet",
+        "source_url:authoritative source URL missing",
+        "event_status:status=UNKNOWN; publishable=False",
+        "official_confirmation:media/journalist evidence remains pending",
+        "mandatory_facts:missing=[]; unsupported=[]",
+        "temporal_consistency:awaiting authoritative timestamp"
+      ],
+      "last_seen": "2026-10-28T14:38:18.131083+00:00"
+    },
+    "1a3b33e0518134eeb77ea74a2253a18f": {
+      "decision": "REJECT",
+      "event": "UNKNOWN",
+      "status": "UNKNOWN",
+      "reasons": [
+        "event_classification:conflicting or missing event classifications",
+        "entity_validation:mandatory person/club identity or relationship is unresolved",
+        "sport_validation:football was not positively established",
+        "league_validation:no active Premier League relationship",
+        "source_provenance:no verified authoritative source yet",
+        "source_url:authoritative source URL missing",
+        "event_status:status=UNKNOWN; publishable=False",
+        "official_confirmation:media/journalist evidence remains pending",
+        "mandatory_facts:missing=[]; unsupported=[]",
+        "temporal_consistency:awaiting authoritative timestamp"
+      ],
+      "last_seen": "2026-10-28T14:38:18.273989+00:00"
+    },
+    "51dc69ffff7ac07e8a57ab322a0de0ad": {
+      "decision": "REJECT",
+      "event": "UNKNOWN",
+      "status": "UNKNOWN",
+      "reasons": [
+        "event_classification:conflicting or missing event classifications",
+        "entity_validation:mandatory person/club identity or relationship is unresolved",
+        "sport_validation:football was not positively established",
+        "league_validation:no active Premier League relationship",
+        "source_provenance:no verified authoritative source yet",
+        "source_url:authoritative source URL missing",
+        "event_status:status=UNKNOWN; publishable=False",
+        "official_confirmation:media/journalist evidence remains pending",
+        "mandatory_facts:missing=[]; unsupported=[]",
+        "temporal_consistency:awaiting authoritative timestamp"
+      ],
+      "last_seen": "2026-10-28T14:38:18.334233+00:00"
+    },
+    "4e03b46c40f10535f5591d0da9e04b2b": {
+      "decision": "REJECT",
+      "event": "UNKNOWN",
+      "status": "UNKNOWN",
+      "reasons": [
+        "event_classification:conflicting or missing event classifications",
+        "entity_validation:mandatory person/club identity or relationship is unresolved",
+        "sport_validation:football was not positively established",
+        "league_validation:no active Premier League relationship",
+        "source_provenance:no verified authoritative source yet",
+        "source_url:authoritative source URL missing",
+        "event_status:status=UNKNOWN; publishable=False",
+        "official_confirmation:media/journalist evidence remains pending",
+        "mandatory_facts:missing=[]; unsupported=[]",
+        "temporal_consistency:awaiting authoritative timestamp"
+      ],
+      "last_seen": "2026-10-28T14:38:18.549695+00:00"
+    },
+    "e71beb808daf1f603e08b62c3ece2776": {
+      "decision": "REJECT",
+      "event": "INJURY",
+      "status": "UNKNOWN",
+      "reasons": [
+        "entity_validation:mandatory person/club identity or relationship is unresolved",
+        "sport_validation:football was not positively established",
+        "league_validation:no active Premier League relationship",
+        "source_provenance:no verified authoritative source yet",
+        "source_url:authoritative source URL missing",
+        "event_status:status=UNKNOWN; publishable=False",
+        "official_confirmation:media/journalist evidence remains pending",
+        "mandatory_facts:missing=['subject_id', 'subject_name', 'club_id', 'club_name', 'injury_status']; unsupported=[]",
+        "temporal_consistency:awaiting authoritative timestamp",
+        "source_reliability:minimum authoritative reliability=0.000"
+      ],
+      "last_seen": "2026-10-28T14:38:18.706651+00:00"
+    },
+    "e1c7c78faadaeead36e0a621e9799d40": {
+      "decision": "REJECT",
+      "event": "UNKNOWN",
+      "status": "UNKNOWN",
+      "reasons": [
+        "event_classification:conflicting or missing event classifications",
+        "entity_validation:mandatory person/club identity or relationship is unresolved",
+        "sport_validation:football was not positively established",
+        "league_validation:no active Premier League relationship",
+        "source_provenance:no verified authoritative source yet",
+        "source_url:authoritative source URL missing",
+        "event_status:status=UNKNOWN; publishable=False",
+        "official_confirmation:media/journalist evidence remains pending",
+        "mandatory_facts:missing=[]; unsupported=[]",
+        "temporal_consistency:awaiting authoritative timestamp"
+      ],
+      "last_seen": "2026-10-28T14:38:18.778971+00:00"
+    },
+    "84d5aedc4d06217bcfb059f5632ac20c": {
+      "decision": "REJECT",
+      "event": "UNKNOWN",
+      "status": "UNKNOWN",
+      "reasons": [
+        "event_classification:conflicting or missing event classifications",
+        "entity_validation:mandatory person/club identity or relationship is unresolved",
+        "source_provenance:no verified authoritative source yet",
+        "source_url:authoritative source URL missing",
+        "event_status:status=UNKNOWN; publishable=False",
+        "official_confirmation:media/journalist evidence remains pending",
+        "mandatory_facts:missing=[]; unsupported=[]",
+        "temporal_consistency:awaiting authoritative timestamp",
+        "source_reliability:minimum authoritative reliability=0.000",
+        "overall_confidence:noncompensatory weighted confidence=0.000"
+      ],
+      "last_seen": "2026-10-28T14:38:19.006240+00:00"
+    },
+    "d0f88e60971d63e8020e2ed849d522c0": {
+      "decision": "REJECT",
+      "event": "UNKNOWN",
+      "status": "UNKNOWN",
+      "reasons": [
+        "event_classification:conflicting or missing event classifications",
+        "entity_validation:mandatory person/club identity or relationship is unresolved",
+        "source_provenance:no verified authoritative source yet",
+        "source_url:authoritative source URL missing",
+        "event_status:status=UNKNOWN; publishable=False",
+        "official_confirmation:media/journalist evidence remains pending",
+        "mandatory_facts:missing=[]; unsupported=[]",
+        "temporal_consistency:awaiting authoritative timestamp",
+        "source_reliability:minimum authoritative reliability=0.000",
+        "overall_confidence:noncompensatory weighted confidence=0.000"
+      ],
+      "last_seen": "2026-10-28T14:38:19.456841+00:00"
+    },
+    "2fd24b71688673e36f0ce21104871242": {
+      "decision": "REJECT",
+      "event": "TRANSFER",
+      "status": "UNKNOWN",
+      "reasons": [
+        "article_category:rumour/opinion/analysis/preview/recap/interview/feature/editorial or unknown",
+        "entity_validation:mandatory person/club identity or relationship is unresolved",
+        "source_provenance:no verified authoritative source yet",
+        "source_url:authoritative source URL missing",
+        "event_status:status=UNKNOWN; publishable=False",
+        "official_confirmation:media/journalist evidence remains pending",
+        "mandatory_facts:missing=['subject_id', 'subject_name', 'club_from_id', 'club_from_name', 'club_to_id', 'club_to_name']; unsupported=[]",
+        "temporal_consistency:awaiting authoritative timestamp",
+        "source_reliability:minimum authoritative reliability=0.000",
+        "overall_confidence:noncompensatory weighted confidence=0.000"
+      ],
+      "last_seen": "2026-10-28T14:38:19.612866+00:00"
+    },
+    "9abc399fd19551f4e67fa131f9a2a148": {
+      "decision": "REJECT",
+      "event": "UNKNOWN",
+      "status": "UNKNOWN",
+      "reasons": [
+        "event_classification:conflicting or missing event classifications",
+        "entity_validation:mandatory person/club identity or relationship is unresolved",
+        "source_provenance:no verified authoritative source yet",
+        "source_url:authoritative source URL missing",
+        "event_status:status=UNKNOWN; publishable=False",
+        "official_confirmation:media/journalist evidence remains pending",
+        "mandatory_facts:missing=[]; unsupported=[]",
+        "temporal_consistency:awaiting authoritative timestamp",
+        "source_reliability:minimum authoritative reliability=0.000",
+        "overall_confidence:noncompensatory weighted confidence=0.000"
+      ],
+      "last_seen": "2026-10-28T14:38:19.750776+00:00"
+    },
+    "1601621c55f71eb944ba28a64b162e05": {
+      "decision": "REJECT",
+      "event": "UNKNOWN",
+      "status": "UNKNOWN",
+      "reasons": [
+        "event_classification:conflicting or missing event classifications",
+        "entity_validation:mandatory person/club identity or relationship is unresolved",
+        "source_provenance:no verified authoritative source yet",
+        "source_url:authoritative source URL missing",
+        "event_status:status=UNKNOWN; publishable=False",
+        "official_confirmation:media/journalist evidence remains pending",
+        "mandatory_facts:missing=[]; unsupported=[]",
+        "temporal_consistency:awaiting authoritative timestamp",
+        "source_reliability:minimum authoritative reliability=0.000",
+        "overall_confidence:noncompensatory weighted confidence=0.000"
+      ],
+      "last_seen": "2026-10-28T14:38:21.377544+00:00"
+    },
+    "ee806285be7a630046bcc213c27d9419": {
+      "decision": "REJECT",
+      "event": "UNKNOWN",
+      "status": "UNKNOWN",
+      "reasons": [
+        "event_classification:conflicting or missing event classifications",
+        "entity_validation:mandatory person/club identity or relationship is unresolved",
+        "sport_validation:football was not positively established",
+        "league_validation:no active Premier League relationship",
+        "source_provenance:no verified authoritative source yet",
+        "source_url:authoritative source URL missing",
+        "event_status:status=UNKNOWN; publishable=False",
+        "official_confirmation:media/journalist evidence remains pending",
+        "mandatory_facts:missing=[]; unsupported=[]",
+        "temporal_consistency:awaiting authoritative timestamp"
+      ],
+      "last_seen": "2026-10-28T14:38:22.750211+00:00"
+    },
+    "487b4c977d91222c32090a1f7101ecfc": {
+      "decision": "REJECT",
+      "event": "UNKNOWN",
+      "status": "UNKNOWN",
+      "reasons": [
+        "event_classification:conflicting or missing event classifications",
+        "entity_validation:mandatory person/club identity or relationship is unresolved",
+        "source_provenance:no verified authoritative source yet",
+        "source_url:authoritative source URL missing",
+        "event_status:status=UNKNOWN; publishable=False",
+        "official_confirmation:media/journalist evidence remains pending",
+        "mandatory_facts:missing=[]; unsupported=[]",
+        "temporal_consistency:awaiting authoritative timestamp",
+        "source_reliability:minimum authoritative reliability=0.000",
+        "overall_confidence:noncompensatory weighted confidence=0.000"
+      ],
+      "last_seen": "2026-10-28T14:38:24.967237+00:00"
+    },
+    "7fb2ceeac60467fb53521b0ed20ba599": {
+      "decision": "REJECT",
+      "event": "UNKNOWN",
+      "status": "UNKNOWN",
+      "reasons": [
+        "event_classification:conflicting or missing event classifications",
+        "entity_validation:mandatory person/club identity or relationship is unresolved",
+        "source_provenance:no verified authoritative source yet",
+        "source_url:authoritative source URL missing",
+        "event_status:status=UNKNOWN; publishable=False",
+        "official_confirmation:media/journalist evidence remains pending",
+        "mandatory_facts:missing=[]; unsupported=[]",
+        "temporal_consistency:awaiting authoritative timestamp",
+        "source_reliability:minimum authoritative reliability=0.000",
+        "overall_confidence:noncompensatory weighted confidence=0.000"
+      ],
+      "last_seen": "2026-10-28T14:38:26.246911+00:00"
+    },
+    "26a75fbed68f15c3ac45af7a69dfbe6e": {
+      "decision": "REJECT",
+      "event": "UNKNOWN",
+      "status": "UNKNOWN",
+      "reasons": [
+        "event_classification:conflicting or missing event classifications",
+        "article_category:rumour/opinion/analysis/preview/recap/interview/feature/editorial or unknown",
+        "entity_validation:mandatory person/club identity or relationship is unresolved",
+        "source_provenance:no verified authoritative source yet",
+        "source_url:authoritative source URL missing",
+        "event_status:status=UNKNOWN; publishable=False",
+        "official_confirmation:media/journalist evidence remains pending",
+        "mandatory_facts:missing=[]; unsupported=[]",
+        "temporal_consistency:awaiting authoritative timestamp",
+        "source_reliability:minimum authoritative reliability=0.000"
+      ],
+      "last_seen": "2026-10-28T14:38:26.316768+00:00"
+    },
+    "229eeab1035bd59106d1711e429e47f7": {
+      "decision": "REJECT",
+      "event": "TRANSFER",
+      "status": "COMPLETED",
+      "reasons": [
+        "entity_validation:mandatory person/club identity or relationship is unresolved",
+        "mandatory_facts:missing=['subject_id', 'subject_name', 'club_from_id', 'club_from_name']; unsupported=[]",
+        "overall_confidence:noncompensatory weighted confidence=0.000"
+      ],
+      "last_seen": "2026-10-28T14:38:26.500453+00:00"
+    },
+    "cbccc1bcd426a7f7f27b66b075b6db75": {
+      "decision": "REJECT",
+      "event": "UNKNOWN",
+      "status": "UNKNOWN",
+      "reasons": [
+        "event_classification:conflicting or missing event classifications",
+        "entity_validation:mandatory person/club identity or relationship is unresolved",
+        "source_provenance:no verified authoritative source yet",
+        "source_url:authoritative source URL missing",
+        "event_status:status=UNKNOWN; publishable=False",
+        "official_confirmation:media/journalist evidence remains pending",
+        "mandatory_facts:missing=[]; unsupported=[]",
+        "temporal_consistency:awaiting authoritative timestamp",
+        "source_reliability:minimum authoritative reliability=0.000",
+        "overall_confidence:noncompensatory weighted confidence=0.000"
+      ],
+      "last_seen": "2026-10-28T14:38:28.972855+00:00"
+    },
+    "179c13c36a4a2834befad5a4fe7efc6c": {
+      "decision": "REJECT",
+      "event": "UNKNOWN",
+      "status": "UNKNOWN",
+      "reasons": [
+        "event_classification:conflicting or missing event classifications",
+        "entity_validation:mandatory person/club identity or relationship is unresolved",
+        "source_provenance:no verified authoritative source yet",
+        "source_url:authoritative source URL missing",
+        "event_status:status=UNKNOWN; publishable=False",
+        "official_confirmation:media/journalist evidence remains pending",
+        "mandatory_facts:missing=[]; unsupported=[]",
+        "temporal_consistency:awaiting authoritative timestamp",
+        "source_reliability:minimum authoritative reliability=0.000",
+        "overall_confidence:noncompensatory weighted confidence=0.000"
+      ],
+      "last_seen": "2026-10-28T14:38:29.225590+00:00"
+    },
+    "99f497370622bd39f2a2f62e9ba397fc": {
+      "decision": "REJECT",
+      "event": "UNKNOWN",
+      "status": "UNKNOWN",
+      "reasons": [
+        "event_classification:conflicting or missing event classifications",
+        "entity_validation:mandatory person/club identity or relationship is unresolved",
+        "source_provenance:no verified authoritative source yet",
+        "source_url:authoritative source URL missing",
+        "event_status:status=UNKNOWN; publishable=False",
+        "official_confirmation:media/journalist evidence remains pending",
+        "mandatory_facts:missing=[]; unsupported=[]",
+        "temporal_consistency:awaiting authoritative timestamp",
+        "source_reliability:minimum authoritative reliability=0.000",
+        "overall_confidence:noncompensatory weighted confidence=0.000"
+      ],
+      "last_seen": "2026-10-28T14:38:29.546626+00:00"
+    },
+    "87d3a28cafe1d39d8eb6fc71145713c8": {
+      "decision": "REJECT",
+      "event": "UNKNOWN",
+      "status": "UNKNOWN",
+      "reasons": [
+        "event_classification:conflicting or missing event classifications",
+        "entity_validation:mandatory person/club identity or relationship is unresolved",
+        "sport_validation:football was not positively established",
+        "league_validation:no active Premier League relationship",
+        "source_provenance:no verified authoritative source yet",
+        "source_url:authoritative source URL missing",
+        "event_status:status=UNKNOWN; publishable=False",
+        "official_confirmation:media/journalist evidence remains pending",
+        "mandatory_facts:missing=[]; unsupported=[]",
+        "temporal_consistency:awaiting authoritative timestamp"
+      ],
+      "last_seen": "2026-10-28T14:38:30.120452+00:00"
+    },
+    "e526b0932438d70cd92ce2cadba1d024": {
+      "decision": "REJECT",
+      "event": "UNKNOWN",
+      "status": "UNKNOWN",
+      "reasons": [
+        "event_classification:conflicting or missing event classifications",
+        "entity_validation:mandatory person/club identity or relationship is unresolved",
+        "sport_validation:football was not positively established",
+        "league_validation:no active Premier League relationship",
+        "source_provenance:no verified authoritative source yet",
+        "source_url:authoritative source URL missing",
+        "event_status:status=UNKNOWN; publishable=False",
+        "official_confirmation:media/journalist evidence remains pending",
+        "mandatory_facts:missing=[]; unsupported=[]",
+        "temporal_consistency:awaiting authoritative timestamp"
+      ],
+      "last_seen": "2026-10-28T14:38:30.278668+00:00"
+    },
+    "487a4a6365ab20f9da747bc37f17e264": {
+      "decision": "REJECT",
+      "event": "UNKNOWN",
+      "status": "UNKNOWN",
+      "reasons": [
+        "event_classification:conflicting or missing event classifications",
+        "entity_validation:mandatory person/club identity or relationship is unresolved",
+        "sport_validation:football was not positively established",
+        "league_validation:no active Premier League relationship",
+        "source_provenance:no verified authoritative source yet",
+        "source_url:authoritative source URL missing",
+        "event_status:status=UNKNOWN; publishable=False",
+        "official_confirmation:media/journalist evidence remains pending",
+        "mandatory_facts:missing=[]; unsupported=[]",
+        "temporal_consistency:awaiting authoritative timestamp"
+      ],
+      "last_seen": "2026-10-28T14:38:30.368261+00:00"
+    },
+    "dff77ae671a4d37f0238fa005d37276d": {
+      "decision": "REJECT",
+      "event": "UNKNOWN",
+      "status": "UNKNOWN",
+      "reasons": [
+        "event_classification:conflicting or missing event classifications",
+        "entity_validation:mandatory person/club identity or relationship is unresolved",
+        "source_provenance:no verified authoritative source yet",
+        "source_url:authoritative source URL missing",
+        "event_status:status=UNKNOWN; publishable=False",
+        "official_confirmation:media/journalist evidence remains pending",
+        "mandatory_facts:missing=[]; unsupported=[]",
+        "temporal_consistency:awaiting authoritative timestamp",
+        "source_reliability:minimum authoritative reliability=0.000",
+        "overall_confidence:noncompensatory weighted confidence=0.000"
+      ],
+      "last_seen": "2026-10-28T14:38:31.435667+00:00"
+    },
+    "8a6059579a83aa7985fb42ccdb72e5cf": {
+      "decision": "REJECT",
+      "event": "TRANSFER",
+      "status": "COMPLETED",
+      "reasons": [
+        "entity_validation:mandatory person/club identity or relationship is unresolved",
+        "sport_validation:football was not positively established",
+        "league_validation:no active Premier League relationship",
+        "source_provenance:no verified authoritative source yet",
+        "source_url:authoritative source URL missing",
+        "event_status:status=COMPLETED; publishable=True",
+        "official_confirmation:media/journalist evidence remains pending",
+        "mandatory_facts:missing=['subject_id', 'subject_name', 'club_from_id', 'club_from_name', 'club_to_id', 'club_to_name']; unsupported=[]",
+        "temporal_consistency:awaiting authoritative timestamp",
+        "source_reliability:minimum authoritative reliability=0.000"
+      ],
+      "last_seen": "2026-10-28T14:38:32.022453+00:00"
+    },
+    "077fe853b6f59116e16519f534e3e30d": {
+      "decision": "REJECT",
+      "event": "TRANSFER",
+      "status": "COMPLETED",
+      "reasons": [
+        "entity_validation:mandatory person/club identity or relationship is unresolved",
+        "source_provenance:no verified authoritative source yet",
+        "source_url:authoritative source URL missing",
+        "event_status:status=COMPLETED; publishable=True",
+        "official_confirmation:media/journalist evidence remains pending",
+        "mandatory_facts:missing=['subject_id', 'subject_name', 'club_from_id', 'club_from_name', 'club_to_id', 'club_to_name']; unsupported=[]",
+        "temporal_consistency:awaiting authoritative timestamp",
+        "source_reliability:minimum authoritative reliability=0.000",
+        "overall_confidence:noncompensatory weighted confidence=0.000"
+      ],
+      "last_seen": "2026-10-28T14:38:32.144297+00:00"
+    },
+    "eaa1caa1ee81df8f841c5bb3c5a877d7": {
+      "decision": "REJECT",
+      "event": "TRANSFER",
+      "status": "COMPLETED",
+      "reasons": [
+        "entity_validation:mandatory person/club identity or relationship is unresolved",
+        "mandatory_facts:missing=['subject_id', 'subject_name', 'club_from_id', 'club_from_name']; unsupported=[]",
+        "overall_confidence:noncompensatory weighted confidence=0.000"
+      ],
+      "last_seen": "2026-10-28T14:38:33.396008+00:00"
+    },
+    "c7a557ae1e7b1a5650de5a2fbc1f8231": {
+      "decision": "REJECT",
+      "event": "UNKNOWN",
+      "status": "UNKNOWN",
+      "reasons": [
+        "event_classification:conflicting or missing event classifications",
+        "entity_validation:mandatory person/club identity or relationship is unresolved",
+        "sport_validation:football was not positively established",
+        "league_validation:no active Premier League relationship",
+        "source_provenance:no verified authoritative source yet",
+        "source_url:authoritative source URL missing",
+        "event_status:status=UNKNOWN; publishable=False",
+        "official_confirmation:media/journalist evidence remains pending",
+        "mandatory_facts:missing=[]; unsupported=[]",
+        "temporal_consistency:awaiting authoritative timestamp"
+      ],
+      "last_seen": "2026-10-28T14:38:35.019457+00:00"
+    },
+    "f0159205066b96f52f5e552f0fd30c6c": {
+      "decision": "REJECT",
+      "event": "UNKNOWN",
+      "status": "UNKNOWN",
+      "reasons": [
+        "event_classification:conflicting or missing event classifications",
+        "entity_validation:mandatory person/club identity or relationship is unresolved",
+        "sport_validation:football was not positively established",
+        "league_validation:no active Premier League relationship",
+        "source_provenance:no verified authoritative source yet",
+        "source_url:authoritative source URL missing",
+        "event_status:status=UNKNOWN; publishable=False",
+        "official_confirmation:media/journalist evidence remains pending",
+        "mandatory_facts:missing=[]; unsupported=[]",
+        "temporal_consistency:awaiting authoritative timestamp"
+      ],
+      "last_seen": "2026-10-28T14:38:35.121120+00:00"
+    },
+    "a10be152ad040abe92a7654b8f512d04": {
+      "decision": "REJECT",
+      "event": "UNKNOWN",
+      "status": "UNKNOWN",
+      "reasons": [
+        "event_classification:conflicting or missing event classifications",
+        "entity_validation:mandatory person/club identity or relationship is unresolved",
+        "sport_validation:football was not positively established",
+        "league_validation:no active Premier League relationship",
+        "source_provenance:no verified authoritative source yet",
+        "source_url:authoritative source URL missing",
+        "event_status:status=UNKNOWN; publishable=False",
+        "official_confirmation:media/journalist evidence remains pending",
+        "mandatory_facts:missing=[]; unsupported=[]",
+        "temporal_consistency:awaiting authoritative timestamp"
+      ],
+      "last_seen": "2026-10-28T14:38:35.296060+00:00"
+    },
+    "ab1afe2ed49e9554d42aff0731c82e93": {
+      "decision": "REJECT",
+      "event": "UNKNOWN",
+      "status": "UNKNOWN",
+      "reasons": [
+        "event_classification:conflicting or missing event classifications",
+        "article_category:rumour/opinion/analysis/preview/recap/interview/feature/editorial or unknown",
+        "entity_validation:mandatory person/club identity or relationship is unresolved",
+        "source_provenance:no verified authoritative source yet",
+        "source_url:authoritative source URL missing",
+        "event_status:status=UNKNOWN; publishable=False",
+        "official_confirmation:media/journalist evidence remains pending",
+        "mandatory_facts:missing=[]; unsupported=[]",
+        "temporal_consistency:awaiting authoritative timestamp",
+        "source_reliability:minimum authoritative reliability=0.000"
+      ],
+      "last_seen": "2026-10-28T14:38:36.830545+00:00"
+    },
+    "8fcc57fb2b7633cad5d096eec6adb394": {
+      "decision": "REJECT",
+      "event": "UNKNOWN",
+      "status": "UNKNOWN",
+      "reasons": [
+        "event_classification:conflicting or missing event classifications",
+        "entity_validation:mandatory person/club identity or relationship is unresolved",
+        "source_provenance:no verified authoritative source yet",
+        "source_url:authoritative source URL missing",
+        "event_status:status=UNKNOWN; publishable=False",
+        "official_confirmation:media/journalist evidence remains pending",
+        "mandatory_facts:missing=[]; unsupported=[]",
+        "temporal_consistency:awaiting authoritative timestamp",
+        "source_reliability:minimum authoritative reliability=0.000",
+        "overall_confidence:noncompensatory weighted confidence=0.000"
+      ],
+      "last_seen": "2026-10-28T14:38:38.468470+00:00"
+    },
+    "cc8e545524348dd2382d20f1c7b20f79": {
+      "decision": "REJECT",
+      "event": "UNKNOWN",
+      "status": "UNKNOWN",
+      "reasons": [
+        "event_classification:conflicting or missing event classifications",
+        "entity_validation:mandatory person/club identity or relationship is unresolved",
+        "source_provenance:no verified authoritative source yet",
+        "source_url:authoritative source URL missing",
+        "event_status:status=UNKNOWN; publishable=False",
+        "official_confirmation:media/journalist evidence remains pending",
+        "mandatory_facts:missing=[]; unsupported=[]",
+        "temporal_consistency:awaiting authoritative timestamp",
+        "source_reliability:minimum authoritative reliability=0.000",
+        "overall_confidence:noncompensatory weighted confidence=0.000"
+      ],
+      "last_seen": "2026-10-28T14:38:39.721163+00:00"
+    },
+    "2006f7e120344f2a9642949c485529b8": {
+      "decision": "REJECT",
+      "event": "UNKNOWN",
+      "status": "UNKNOWN",
+      "reasons": [
+        "event_classification:conflicting or missing event classifications",
+        "article_category:rumour/opinion/analysis/preview/recap/interview/feature/editorial or unknown",
+        "entity_validation:mandatory person/club identity or relationship is unresolved",
+        "source_provenance:no verified authoritative source yet",
+        "source_url:authoritative source URL missing",
+        "event_status:status=UNKNOWN; publishable=False",
+        "official_confirmation:media/journalist evidence remains pending",
+        "mandatory_facts:missing=[]; unsupported=[]",
+        "temporal_consistency:awaiting authoritative timestamp",
+        "source_reliability:minimum authoritative reliability=0.000"
+      ],
+      "last_seen": "2026-10-28T14:38:39.781936+00:00"
+    },
+    "2e09e02297843e1ddcfd6bad97a8fa06": {
+      "decision": "REJECT",
+      "event": "UNKNOWN",
+      "status": "UNKNOWN",
+      "reasons": [
+        "event_classification:conflicting or missing event classifications",
+        "entity_validation:mandatory person/club identity or relationship is unresolved",
+        "source_provenance:no verified authoritative source yet",
+        "source_url:authoritative source URL missing",
+        "event_status:status=UNKNOWN; publishable=False",
+        "official_confirmation:media/journalist evidence remains pending",
+        "mandatory_facts:missing=[]; unsupported=[]",
+        "temporal_consistency:awaiting authoritative timestamp",
+        "source_reliability:minimum authoritative reliability=0.000",
+        "overall_confidence:noncompensatory weighted confidence=0.000"
+      ],
+      "last_seen": "2026-10-28T14:38:39.984506+00:00"
+    },
+    "9937888da94ea3bd29e2160a8008cad5": {
+      "decision": "REJECT",
+      "event": "UNKNOWN",
+      "status": "UNKNOWN",
+      "reasons": [
+        "event_classification:conflicting or missing event classifications",
+        "article_category:rumour/opinion/analysis/preview/recap/interview/feature/editorial or unknown",
+        "entity_validation:mandatory person/club identity or relationship is unresolved",
+        "source_provenance:no verified authoritative source yet",
+        "source_url:authoritative source URL missing",
+        "event_status:status=UNKNOWN; publishable=False",
+        "official_confirmation:media/journalist evidence remains pending",
+        "mandatory_facts:missing=[]; unsupported=[]",
+        "temporal_consistency:awaiting authoritative timestamp",
+        "source_reliability:minimum authoritative reliability=0.000"
+      ],
+      "last_seen": "2026-10-28T14:38:40.051041+00:00"
+    },
+    "90147f2736d601241fa97dbdeacf8872": {
+      "decision": "REJECT",
+      "event": "CONTRACT",
+      "status": "COMPLETED",
+      "reasons": [
+        "entity_validation:mandatory person/club identity or relationship is unresolved",
+        "mandatory_facts:missing=['subject_id', 'subject_name', 'contract_length']; unsupported=[]",
+        "overall_confidence:noncompensatory weighted confidence=0.000"
+      ],
+      "last_seen": "2026-10-28T14:38:40.671298+00:00"
     }
   },
   "posted_v2_fingerprints": [
