@@ -40,7 +40,14 @@ def main() -> int:
         # Exception text from HTTP libraries may contain credentials or URLs.
         # Expose only our fixed diagnostics plus a safe exception category.
         text = str(exc)
-        if text.startswith("X_SESSION:") or text.startswith("X transaction "):
+        response = getattr(exc, "response", None)
+        status = getattr(response, "status_code", None)
+        url = getattr(getattr(exc, "request", None), "url", None)
+        host = getattr(url, "host", "")
+        if isinstance(status, int) and host in ("x.com", "abs.twimg.com"):
+            target = "X home" if host == "x.com" else "X transaction asset"
+            print(f"X_SESSION_FAILED: HTTP {status} from {target}; no tweet attempted")
+        elif text.startswith("X_SESSION:") or text.startswith("X transaction "):
             print(text)
         else:
             print(f"X_SESSION_FAILED: {type(exc).__name__}; verify current X posting cookies and connectivity")
