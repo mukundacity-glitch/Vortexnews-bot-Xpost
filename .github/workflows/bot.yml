@@ -5,6 +5,13 @@ name: 01 - Football News Bot
 # posting limits. The publication engine remains fail-closed and will never
 # publish an unverified event.
 on:
+  pull_request:
+    paths:
+      - main.py
+      - src/twikit_runtime.py
+      - tools/x_session_preflight.py
+      - tests/test_x_session_preflight.py
+      - .github/workflows/bot.yml
   schedule:
     - cron: "*/20 * * * *"
   workflow_dispatch: {}
@@ -15,11 +22,31 @@ permissions:
   actions: write  # required for the cache-pruning step (gh cache delete)
 
 concurrency:
-  group: fpl-vortex-bot
+  group: ${{ github.event_name == 'pull_request' && format('fpl-vortex-preflight-{0}', github.event.pull_request.number) || 'fpl-vortex-bot' }}
   cancel-in-progress: false
 jobs:
+  session-preflight:
+    # Credentials are never provided to a fork's pull request.
+    if: github.event_name == 'pull_request' && github.event.pull_request.head.repo.full_name == github.repository
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: python -m pip install -r requirements.txt
+      - run: python -m pytest -q tests/test_twikit_runtime.py tests/test_x_session_preflight.py
+      - name: Read-only X session verification
+        env:
+          X_AUTH_TOKEN: ${{ secrets.X_AUTH_TOKEN }}
+          X_CT0_TOKEN: ${{ secrets.X_CT0_TOKEN }}
+          X_POST_AUTH_TOKEN: ${{ secrets.X_POST_AUTH_TOKEN }}
+          X_POST_CT0_TOKEN: ${{ secrets.X_POST_CT0_TOKEN }}
+        run: python tools/x_session_preflight.py
+
   run-bot:
-    if: ${{ vars.BOT_PAUSED != 'true' }}
+    if: ${{ github.event_name != 'pull_request' && vars.BOT_PAUSED != 'true' }}
     runs-on: ubuntu-latest
 
     env:
@@ -94,6 +121,15 @@ jobs:
         if: steps.window.outputs.should_run == 'true'
         run: |
           python -m pytest -q
+
+      - name: Verify X posting session before collecting and pacing posts
+        if: steps.window.outputs.should_run == 'true'
+        env:
+          X_AUTH_TOKEN: ${{ secrets.X_AUTH_TOKEN }}
+          X_CT0_TOKEN: ${{ secrets.X_CT0_TOKEN }}
+          X_POST_AUTH_TOKEN: ${{ secrets.X_POST_AUTH_TOKEN }}
+          X_POST_CT0_TOKEN: ${{ secrets.X_POST_CT0_TOKEN }}
+        run: python tools/x_session_preflight.py
 
       - name: Run bot
         id: run
